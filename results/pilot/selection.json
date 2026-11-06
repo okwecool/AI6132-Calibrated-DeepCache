@@ -1,0 +1,12 @@
+{
+  "validation_lpips": {
+    "uniform": 0.27066274732351303,
+    "calibrated": 0.2703986018896103,
+    "paper_c15_p14": 0.2668345868587494,
+    "paper_c20_p14": 0.2714967094361782
+  },
+  "selected_paper": "paper_c15_p14",
+  "dpmpp_steps": 20,
+  "dpmpp_selection": "rounded 20 * validation median uniform latency / validation median DPM++20 latency; test time need not match exactly",
+  "calibrated_test_parameters_frozen": true
+}

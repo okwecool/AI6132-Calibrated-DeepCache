@@ -1,0 +1,13 @@
+{
+  "src/cache_policy.py": "5a4addf851e36048b0625f9454efc9b8a8e09c6538c8166fb3a861441a911211",
+  "src/error_calibration.py": "2174d2bda8350ede1cd1adb3bdcd05f83f8163d28dea57510871958079486837",
+  "scripts/run_pilot.py": "12cb483f8c07a2b66b297e6b7801998962a68e8addd90beb378ab5c307e01363",
+  "scripts/run_round2.py": "8eafe03863f9e8d34bb4e7b9b3f87a1d6d746c8d9aeec99ffaf0564947f7944d",
+  "scripts/evaluate_pilot.py": "53fb7b800291ed2ba0301197429ecf0cae000fbb788dac33ba9fcb85b42e47b3",
+  "scripts/plot_round2_diagnostics.py": "94374196864738608622ab7729d3471db83d3ee160878c572d1269990ea39c4d",
+  "scripts/write_round2_report.py": "3579d4776cc88b35ec187754c01c332aa2c17ae1ad0048c8d838dd9a309793d6",
+  "tests/test_policies.py": "d65a45e970ffa840aea55f116b46ea361f34f672e46d421f2d26532bf2213db5",
+  "tests/test_error_calibration.py": "a38447579ee5a747806a4e49919d9b83ed5e231e5762745faf512e18549d01ca",
+  "manifests/round2.json": "676249626c63384cfec17de23d72bc1a6d9c5980be18c6eefc844279b7a22d43",
+  "requirements.txt": "0e09167165b151d51d52d5a8dccc29f9a0532fa1c7859a3520c9b8400216d9ea"
+}

@@ -1,0 +1,15 @@
+{
+  "rule": "wall seconds >60 AND wall minus GPU-event U-Net seconds >60; remeasure once with identical settings, retain original quality images and raw rows",
+  "repairs": [
+    {
+      "key": "test/uniform/136841_2026",
+      "original_seconds": 2550.973313400056,
+      "original_unet_seconds": 3.4655190153121946,
+      "replacement_seconds": 2.270380800124258,
+      "replacement_unet_seconds": 2.081376612663269,
+      "original_image_sha256": "e0ebaa7650ba11792426a4ce5d1156168baaf1463d5648e6af9c2eb136eb6ca3",
+      "replacement_row_key": "timing_repair/uniform/136841_2026",
+      "pixels_identical": true
+    }
+  ]
+}

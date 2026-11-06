@@ -1,0 +1,15 @@
+{
+  "src/cache_policy.py": "5a4addf851e36048b0625f9454efc9b8a8e09c6538c8166fb3a861441a911211",
+  "src/error_calibration.py": "2174d2bda8350ede1cd1adb3bdcd05f83f8163d28dea57510871958079486837",
+  "scripts/run_pilot.py": "12cb483f8c07a2b66b297e6b7801998962a68e8addd90beb378ab5c307e01363",
+  "scripts/run_confirmation.py": "5a4daf4939e9b4259cea7eabadd6f0180e92eb6e3a8981ecdb2be194d715d1cb",
+  "scripts/prepare_assets.py": "1a81bb211264c79fab5940a015de2ac3aed3c27829b2051bbac2c52cf7daf758",
+  "scripts/repair_interrupted_timings.py": "fd103fea042283c981ae29642fbf6d8ea2a69afe9eac88991e7e6c0410067aaf",
+  "scripts/evaluate_pilot.py": "699906404062f46de3a798770aab589ac1ffc970811c7689e34ad174a19594b0",
+  "scripts/summarize_confirmation.py": "1180b16fe17cd1aea1886aa4f4c36f4bba9792af82482d6214b589da3cb8efa6",
+  "tests/test_policies.py": "d65a45e970ffa840aea55f116b46ea361f34f672e46d421f2d26532bf2213db5",
+  "tests/test_error_calibration.py": "a38447579ee5a747806a4e49919d9b83ed5e231e5762745faf512e18549d01ca",
+  "tests/test_paired_analysis.py": "bb783a9c965ae65396005e853ff7cf47d4ec7168598ff1c10ebd267672da3d60",
+  "manifests/confirmation.json": "507d57eacb1f32937b1f838921d5061d988da6a9b548c6b5877b9fbb6e6748f2",
+  "requirements.txt": "0e09167165b151d51d52d5a8dccc29f9a0532fa1c7859a3520c9b8400216d9ea"
+}

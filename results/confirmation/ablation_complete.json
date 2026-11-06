@@ -1,0 +1,11 @@
+{
+  "new_images": 64,
+  "subset_prompts": 16,
+  "budgets": [
+    10,
+    17,
+    25
+  ],
+  "reuse_test_budget17_and_reference": true,
+  "total_generation_seconds_this_invocation": 4304.412739200052
+}

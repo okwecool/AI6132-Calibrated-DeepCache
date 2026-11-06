@@ -1,0 +1,69 @@
+{
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "device_capability": [
+    12,
+    0
+  ],
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "diffusers": "0.35.1",
+    "DeepCache": "0.1.1",
+    "transformers": "4.49.0",
+    "huggingface-hub": "0.36.2",
+    "lpips": "0.1.4"
+  },
+  "precision": "fp16",
+  "attention": "PyTorch SDPA default",
+  "tf32_matmul": true,
+  "resolution": [
+    512,
+    512
+  ],
+  "batch_size": 1,
+  "model_source": {
+    "repo_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "files": [
+      "model_index.json",
+      "README.md",
+      "unet/diffusion_pytorch_model.fp16.safetensors",
+      "unet/config.json",
+      "vae/diffusion_pytorch_model.fp16.safetensors",
+      "vae/config.json",
+      "text_encoder/model.fp16.safetensors",
+      "text_encoder/config.json",
+      "feature_extractor/preprocessor_config.json",
+      "scheduler/scheduler_config.json",
+      "tokenizer/merges.txt",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json"
+    ]
+  },
+  "steps": 50,
+  "budget": 17,
+  "calibration_feature": "up_blocks[-1].resnets[-2] output, spatial mean pooled 8x8, CFG branches normalized separately",
+  "round": 3,
+  "manifest": "manifests/confirmation.json",
+  "calibration_prompts": 8,
+  "validation_prompts": 8,
+  "test_prompts": 100,
+  "test_seeds": [
+    2026
+  ],
+  "calibration_probe_max_age": 5,
+  "new_test_ids_disjoint_from_all_round1_ids": true,
+  "kind": "frozen_confirmation",
+  "new_calibration": false,
+  "new_validation": false,
+  "ablation_prompts": 16,
+  "ablation_budgets": [
+    10,
+    17,
+    25
+  ]
+}

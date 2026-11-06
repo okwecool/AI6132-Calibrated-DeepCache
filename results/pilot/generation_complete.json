@@ -1,0 +1,11 @@
+{
+  "test_images": 80,
+  "expected_pairs": 16,
+  "methods": [
+    "ddim50",
+    "uniform",
+    "paper_nonuniform",
+    "calibrated",
+    "dpmpp_matched"
+  ]
+}

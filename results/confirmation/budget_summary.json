@@ -1,0 +1,174 @@
+{
+  "subset_image_ids": [
+    559778,
+    460430,
+    215826,
+    177953,
+    325157,
+    485485,
+    38090,
+    491242,
+    229387,
+    231079,
+    25529,
+    516212,
+    543547,
+    343038,
+    98187,
+    503845
+  ],
+  "sample_size": 16,
+  "budgets": {
+    "10": {
+      "methods": {
+        "uniform": {
+          "n": 16,
+          "median_seconds": 1.6285202000290155,
+          "mean_lpips": 0.2960141012445092,
+          "mean_clip": 0.30633363127708435,
+          "max_peak_allocated_mib": 2791.23974609375
+        },
+        "calibrated": {
+          "n": 16,
+          "median_seconds": 1.6254354000557214,
+          "mean_lpips": 0.2468161452561617,
+          "mean_clip": 0.31015619169920683,
+          "max_peak_allocated_mib": 2791.23974609375
+        }
+      },
+      "paired_differences": {
+        "lpips_to_ddim50": {
+          "mean_difference": -0.04919795598834753,
+          "cluster_bootstrap_95pct_ci": [
+            -0.06542725614272057,
+            -0.03234031340107322
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        },
+        "clip_cosine": {
+          "mean_difference": 0.0038225604221224785,
+          "cluster_bootstrap_95pct_ci": [
+            -0.0009420417016372084,
+            0.00892972007859498
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        },
+        "seconds": {
+          "mean_difference": -0.002111924986820668,
+          "cluster_bootstrap_95pct_ci": [
+            -0.010076351575844456,
+            0.005215838816366153
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        }
+      }
+    },
+    "17": {
+      "methods": {
+        "uniform": {
+          "n": 16,
+          "median_seconds": 2.2967755999416113,
+          "mean_lpips": 0.17810775619000196,
+          "mean_clip": 0.3094769213348627,
+          "max_peak_allocated_mib": 2788.67724609375
+        },
+        "calibrated": {
+          "n": 16,
+          "median_seconds": 2.3004631497897208,
+          "mean_lpips": 0.15728026092983782,
+          "mean_clip": 0.3144564889371395,
+          "max_peak_allocated_mib": 2790.92724609375
+        }
+      },
+      "paired_differences": {
+        "lpips_to_ddim50": {
+          "mean_difference": -0.02082749526016414,
+          "cluster_bootstrap_95pct_ci": [
+            -0.045180480752605945,
+            0.00764526244602165
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        },
+        "clip_cosine": {
+          "mean_difference": 0.004979567602276802,
+          "cluster_bootstrap_95pct_ci": [
+            0.0020600589457899334,
+            0.008398169837892055
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        },
+        "seconds": {
+          "mean_difference": -0.028298225137405097,
+          "cluster_bootstrap_95pct_ci": [
+            -0.10543123356546857,
+            0.04229657841206053
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        }
+      }
+    },
+    "25": {
+      "methods": {
+        "uniform": {
+          "n": 16,
+          "median_seconds": 3.0752556500956416,
+          "mean_lpips": 0.13480044226162136,
+          "mean_clip": 0.31394507829099894,
+          "max_peak_allocated_mib": 2790.48974609375
+        },
+        "calibrated": {
+          "n": 16,
+          "median_seconds": 3.076851150020957,
+          "mean_lpips": 0.11482881684787571,
+          "mean_clip": 0.31073174998164177,
+          "max_peak_allocated_mib": 2790.86474609375
+        }
+      },
+      "paired_differences": {
+        "lpips_to_ddim50": {
+          "mean_difference": -0.01997162541374564,
+          "cluster_bootstrap_95pct_ci": [
+            -0.03926226384355687,
+            -0.005396365810884176
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        },
+        "clip_cosine": {
+          "mean_difference": -0.0032133283093571663,
+          "cluster_bootstrap_95pct_ci": [
+            -0.00825152446050197,
+            0.0008570339297875687
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        },
+        "seconds": {
+          "mean_difference": -0.0005530438502319157,
+          "cluster_bootstrap_95pct_ci": [
+            -0.005977499188884394,
+            0.004775253588013582
+          ],
+          "clusters": 16,
+          "comparison": "calibrated minus uniform",
+          "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+        }
+      }
+    }
+  },
+  "note": "All three budgets use the same predefined 16 prompts; budget17/reference reuse main test images. Secondary exploratory ablation."
+}

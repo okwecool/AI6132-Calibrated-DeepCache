@@ -1,0 +1,44 @@
+{
+  "labels": {
+    "ddim50": "DDIM 50 (reference)",
+    "uniform": "DeepCache uniform",
+    "paper_nonuniform": "DeepCache paper nonuniform",
+    "calibrated": "Frozen error-calibrated policy",
+    "dpmpp_matched": "Frozen DPM-Solver++ 20 steps"
+  },
+  "kind": "frozen_confirmation",
+  "manifest": "manifests/confirmation.json",
+  "primary_comparison": "calibrated minus uniform LPIPS",
+  "test_methods_predefined": [
+    "ddim50",
+    "uniform",
+    "paper_nonuniform",
+    "calibrated",
+    "dpmpp_matched"
+  ],
+  "ablation_budgets_predefined": [
+    10,
+    17,
+    25
+  ],
+  "ablation_prompts": [
+    559778,
+    460430,
+    215826,
+    177953,
+    325157,
+    485485,
+    38090,
+    491242,
+    229387,
+    231079,
+    25529,
+    516212,
+    543547,
+    343038,
+    98187,
+    503845
+  ],
+  "frozen_source_policy_sha256": "b9baac99a03f471cf629a25aff1b245bfbcb775178c465a91afdf23d72193c31",
+  "frozen_source_selection_sha256": "cc4b7bc2811be5fadc3b1f2fa19bf13f17fc2f45c2c8709c2803834b56a46b88"
+}

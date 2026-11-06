@@ -1,0 +1,15 @@
+# Use consistent text line endings across Windows and other platforms.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Preserve manifests and historical evidence byte-for-byte for SHA256 audits.
+# Their original Windows CRLF endings are intentional, not trailing whitespace.
+manifests/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+results/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

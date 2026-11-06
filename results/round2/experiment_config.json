@@ -1,0 +1,24 @@
+{
+  "labels": {
+    "ddim50": "DDIM 50 (reference)",
+    "uniform": "DeepCache uniform",
+    "paper_nonuniform": "DeepCache paper nonuniform",
+    "feature_calibrated": "Feature-drift calibration (old proxy)",
+    "calibrated": "Error calibration (new proxy)",
+    "dpmpp_matched": "DPM-Solver++ (latency calibrated)"
+  },
+  "round": 2,
+  "manifest": "manifests/round2.json",
+  "policy_candidates_predefined": [
+    "noise_candidate",
+    "step_candidate"
+  ],
+  "test_methods_predefined": [
+    "ddim50",
+    "uniform",
+    "paper_nonuniform",
+    "feature_calibrated",
+    "calibrated",
+    "dpmpp_matched"
+  ]
+}

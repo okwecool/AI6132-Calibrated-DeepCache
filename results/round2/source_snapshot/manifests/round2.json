@@ -1,0 +1,195 @@
+{
+  "source": "https://raw.githubusercontent.com/tylin/coco-caption/master/annotations/captions_val2014.json",
+  "dataset": "COCO 2014 official caption-evaluation subset",
+  "source_sha256": "ee4c7a657443714cc448e12e6193c4d4616de8ad2382a07b8f702ee5e3c46d2b",
+  "selection": "lowest annotation id per image, shuffled image ids",
+  "split_seed": 6132,
+  "excluded_round1_image_ids": [
+    4497,
+    16046,
+    61997,
+    126592,
+    169356,
+    179898,
+    205514,
+    230721,
+    239048,
+    306749,
+    398666,
+    455548,
+    467138,
+    542939,
+    545475,
+    574108
+  ],
+  "calibration": [
+    {
+      "image_id": 250745,
+      "annotation_id": 333355,
+      "prompt": "Two sheep standing next to each other in a field."
+    },
+    {
+      "image_id": 50407,
+      "annotation_id": 225551,
+      "prompt": "A woman standing on a tennis court holding a racquet."
+    },
+    {
+      "image_id": 102331,
+      "annotation_id": 363409,
+      "prompt": "A person on a motorcycle in the dirt doing tricks."
+    },
+    {
+      "image_id": 17178,
+      "annotation_id": 622454,
+      "prompt": "Horses communing with each other on a shady street."
+    },
+    {
+      "image_id": 528496,
+      "annotation_id": 170541,
+      "prompt": "A plate filled with a cut in half sandwich on top of a black table."
+    },
+    {
+      "image_id": 475042,
+      "annotation_id": 599351,
+      "prompt": "A truck is parked in the dirt by the tree."
+    },
+    {
+      "image_id": 259640,
+      "annotation_id": 505476,
+      "prompt": "people walking around a tamale truck and a building"
+    },
+    {
+      "image_id": 41923,
+      "annotation_id": 529025,
+      "prompt": "A cut in half sandwich sitting next to a pile of fries."
+    }
+  ],
+  "validation": [
+    {
+      "image_id": 113097,
+      "annotation_id": 37438,
+      "prompt": "A wall full of pictures in frames of various subject matters."
+    },
+    {
+      "image_id": 129756,
+      "annotation_id": 457031,
+      "prompt": "A man that is standing in the grass near animals."
+    },
+    {
+      "image_id": 398726,
+      "annotation_id": 689382,
+      "prompt": "Two horses pulling an older styled coach passing a home."
+    },
+    {
+      "image_id": 184874,
+      "annotation_id": 802331,
+      "prompt": "a street sign on a pole near a building"
+    },
+    {
+      "image_id": 356347,
+      "annotation_id": 478356,
+      "prompt": "A blue pot of tomato sauce with a wooden ladle."
+    },
+    {
+      "image_id": 180411,
+      "annotation_id": 207770,
+      "prompt": "A large Air Force jet taking off of a runway."
+    },
+    {
+      "image_id": 160836,
+      "annotation_id": 740062,
+      "prompt": "A pizza covered in lots of cheese and toppings."
+    },
+    {
+      "image_id": 227958,
+      "annotation_id": 217367,
+      "prompt": "A produced shelf in a store filled with fruits and veggies."
+    }
+  ],
+  "test": [
+    {
+      "image_id": 463296,
+      "annotation_id": 212759,
+      "prompt": "A living room has modern white furniture and red walls."
+    },
+    {
+      "image_id": 193704,
+      "annotation_id": 151027,
+      "prompt": "A green motel sign hanging from a fake cactus."
+    },
+    {
+      "image_id": 148077,
+      "annotation_id": 290221,
+      "prompt": "A plane just having taken off from the ground"
+    },
+    {
+      "image_id": 113588,
+      "annotation_id": 54152,
+      "prompt": "several young students working at a desk with multiple computers"
+    },
+    {
+      "image_id": 579402,
+      "annotation_id": 517242,
+      "prompt": "At least three zebras are standing together affectionately."
+    },
+    {
+      "image_id": 209868,
+      "annotation_id": 114180,
+      "prompt": "A child leans into the camera brushing their teeth."
+    },
+    {
+      "image_id": 567886,
+      "annotation_id": 355971,
+      "prompt": "A white teddy bear laying on top of a blue rug."
+    },
+    {
+      "image_id": 519801,
+      "annotation_id": 718853,
+      "prompt": "A train traveling down train tracks next to a lush green forest."
+    },
+    {
+      "image_id": 442214,
+      "annotation_id": 516369,
+      "prompt": "Two people eating powdered and chocolate doughnuts and coffee."
+    },
+    {
+      "image_id": 435783,
+      "annotation_id": 721022,
+      "prompt": "an elephant standing in a field of grass surrounded by trees"
+    },
+    {
+      "image_id": 45478,
+      "annotation_id": 479853,
+      "prompt": "The Big Ben clock tower towering over a city at night."
+    },
+    {
+      "image_id": 335374,
+      "annotation_id": 321880,
+      "prompt": "A poster of a professional baseball player with another person's head superimposed on top."
+    },
+    {
+      "image_id": 167818,
+      "annotation_id": 1849,
+      "prompt": "The desk by the window has two laptops and a keyboard on it."
+    },
+    {
+      "image_id": 4438,
+      "annotation_id": 147342,
+      "prompt": "A man jumping up into the air on a sidewalk."
+    },
+    {
+      "image_id": 332351,
+      "annotation_id": 552063,
+      "prompt": "so many people on the sea skating and swimming"
+    },
+    {
+      "image_id": 502240,
+      "annotation_id": 442478,
+      "prompt": "A bunch of children are sitting in a circle with a dog."
+    }
+  ],
+  "test_seeds": [
+    2026,
+    6132
+  ]
+}

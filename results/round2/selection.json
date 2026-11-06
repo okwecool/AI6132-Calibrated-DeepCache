@@ -1,0 +1,14 @@
+{
+  "validation_lpips": {
+    "feature_calibrated": 0.1917789140716195,
+    "noise_candidate": 0.2678305245935917,
+    "step_candidate": 0.16674228943884373,
+    "paper_c15": 0.20463387854397297,
+    "paper_c20": 0.2130158543586731
+  },
+  "selected_new_cost": "step_candidate",
+  "selected_paper": "paper_c15",
+  "dpmpp_steps": 20,
+  "frozen_before_test": true,
+  "criterion": "Mean validation LPIPS to identical-latent DDIM50; CLIP test results do not influence selection"
+}

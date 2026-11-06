@@ -1,0 +1,98 @@
+{
+  "source": "https://raw.githubusercontent.com/tylin/coco-caption/master/annotations/captions_val2014.json",
+  "dataset": "COCO 2014 official caption-evaluation subset",
+  "source_sha256": "ee4c7a657443714cc448e12e6193c4d4616de8ad2382a07b8f702ee5e3c46d2b",
+  "available_images": 40504,
+  "split_seed": 6132,
+  "selection": "lowest annotation id per image, shuffled image ids",
+  "calibration": [
+    {
+      "image_id": 574108,
+      "annotation_id": 446581,
+      "prompt": "A person riding skis across a snow covered hillside."
+    },
+    {
+      "image_id": 455548,
+      "annotation_id": 400000,
+      "prompt": "A herd of zebra standing on top of a dry grass field."
+    },
+    {
+      "image_id": 61997,
+      "annotation_id": 587900,
+      "prompt": "A man paints scenes at a fair stand."
+    },
+    {
+      "image_id": 205514,
+      "annotation_id": 112901,
+      "prompt": "The large living room has been decorated in modern furnishings."
+    }
+  ],
+  "validation": [
+    {
+      "image_id": 179898,
+      "annotation_id": 181540,
+      "prompt": "A little kid holding up two hot dogs in buns."
+    },
+    {
+      "image_id": 126592,
+      "annotation_id": 668842,
+      "prompt": "A red stop sign sitting under a couple of street signs."
+    },
+    {
+      "image_id": 230721,
+      "annotation_id": 599145,
+      "prompt": "THERE IS A CLOCK TOWER THAT IS ON TOP OF A BUILDING"
+    },
+    {
+      "image_id": 545475,
+      "annotation_id": 409453,
+      "prompt": "A cat thats lieing in a pile of shoes by the door."
+    }
+  ],
+  "test": [
+    {
+      "image_id": 398666,
+      "annotation_id": 610151,
+      "prompt": "A clock that is sitting on top of a pole."
+    },
+    {
+      "image_id": 542939,
+      "annotation_id": 707478,
+      "prompt": "A large dog standing next to a man holding a child."
+    },
+    {
+      "image_id": 4497,
+      "annotation_id": 94932,
+      "prompt": "A delivery truck driving on a freeway with \"MOBEL PREISS\" painted on it's sides."
+    },
+    {
+      "image_id": 169356,
+      "annotation_id": 502311,
+      "prompt": "A man flying through the air while riding a skateboard."
+    },
+    {
+      "image_id": 467138,
+      "annotation_id": 99354,
+      "prompt": "A woman is holding a tennis racquet on the tennis court"
+    },
+    {
+      "image_id": 306749,
+      "annotation_id": 329334,
+      "prompt": "A man and baby are by an oversize teddy bear."
+    },
+    {
+      "image_id": 239048,
+      "annotation_id": 575744,
+      "prompt": "a bunch of sheep are walking on the road"
+    },
+    {
+      "image_id": 16046,
+      "annotation_id": 206990,
+      "prompt": "A group of elephants walking across a grass covered field."
+    }
+  ],
+  "test_seeds": [
+    2026,
+    6132
+  ]
+}

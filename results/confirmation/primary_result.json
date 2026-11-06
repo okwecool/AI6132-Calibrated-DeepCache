@@ -1,0 +1,14 @@
+{
+  "predefined_primary_comparison": "calibrated minus uniform LPIPS",
+  "verdict": "在这批冻结策略、全新提示词的测试中，主指标支持新方案降低参考偏差。",
+  "mean_difference": -0.026471468191593885,
+  "paired_bootstrap_95pct_ci": [
+    -0.0347673119828105,
+    -0.01784900336293504
+  ],
+  "relative_lpips_reduction_pct": 13.662283933084426,
+  "prompts_with_lower_lpips": 77,
+  "total_independent_prompts": 100,
+  "no_test_parameter_selection": true,
+  "scope": "SD1.5 FP16 512px CFG7.5 DDIM50 branch0 budget17; does not establish universal visual quality improvement"
+}

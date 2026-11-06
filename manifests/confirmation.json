@@ -1,0 +1,682 @@
+{
+  "source": "https://raw.githubusercontent.com/tylin/coco-caption/master/annotations/captions_val2014.json",
+  "dataset": "COCO 2014 official caption-evaluation subset",
+  "source_sha256": "ee4c7a657443714cc448e12e6193c4d4616de8ad2382a07b8f702ee5e3c46d2b",
+  "selection": "lowest annotation id per image, shuffled image ids",
+  "split_seed": 6132,
+  "calibration": [
+    {
+      "image_id": 250745,
+      "annotation_id": 333355,
+      "prompt": "Two sheep standing next to each other in a field."
+    },
+    {
+      "image_id": 50407,
+      "annotation_id": 225551,
+      "prompt": "A woman standing on a tennis court holding a racquet."
+    },
+    {
+      "image_id": 102331,
+      "annotation_id": 363409,
+      "prompt": "A person on a motorcycle in the dirt doing tricks."
+    },
+    {
+      "image_id": 17178,
+      "annotation_id": 622454,
+      "prompt": "Horses communing with each other on a shady street."
+    },
+    {
+      "image_id": 528496,
+      "annotation_id": 170541,
+      "prompt": "A plate filled with a cut in half sandwich on top of a black table."
+    },
+    {
+      "image_id": 475042,
+      "annotation_id": 599351,
+      "prompt": "A truck is parked in the dirt by the tree."
+    },
+    {
+      "image_id": 259640,
+      "annotation_id": 505476,
+      "prompt": "people walking around a tamale truck and a building"
+    },
+    {
+      "image_id": 41923,
+      "annotation_id": 529025,
+      "prompt": "A cut in half sandwich sitting next to a pile of fries."
+    }
+  ],
+  "validation": [
+    {
+      "image_id": 113097,
+      "annotation_id": 37438,
+      "prompt": "A wall full of pictures in frames of various subject matters."
+    },
+    {
+      "image_id": 129756,
+      "annotation_id": 457031,
+      "prompt": "A man that is standing in the grass near animals."
+    },
+    {
+      "image_id": 398726,
+      "annotation_id": 689382,
+      "prompt": "Two horses pulling an older styled coach passing a home."
+    },
+    {
+      "image_id": 184874,
+      "annotation_id": 802331,
+      "prompt": "a street sign on a pole near a building"
+    },
+    {
+      "image_id": 356347,
+      "annotation_id": 478356,
+      "prompt": "A blue pot of tomato sauce with a wooden ladle."
+    },
+    {
+      "image_id": 180411,
+      "annotation_id": 207770,
+      "prompt": "A large Air Force jet taking off of a runway."
+    },
+    {
+      "image_id": 160836,
+      "annotation_id": 740062,
+      "prompt": "A pizza covered in lots of cheese and toppings."
+    },
+    {
+      "image_id": 227958,
+      "annotation_id": 217367,
+      "prompt": "A produced shelf in a store filled with fruits and veggies."
+    }
+  ],
+  "test": [
+    {
+      "image_id": 559778,
+      "annotation_id": 459865,
+      "prompt": "there is a german sherpard sitting on the floor with a stuffed bear"
+    },
+    {
+      "image_id": 460430,
+      "annotation_id": 483800,
+      "prompt": "A dog in mittens chewing a plastic bottle."
+    },
+    {
+      "image_id": 215826,
+      "annotation_id": 40708,
+      "prompt": "An empty park bench next to a park under a blue sky."
+    },
+    {
+      "image_id": 177953,
+      "annotation_id": 244588,
+      "prompt": "A man and woman are singing and playing music."
+    },
+    {
+      "image_id": 325157,
+      "annotation_id": 671589,
+      "prompt": "A group of men in uniform standing next to each other."
+    },
+    {
+      "image_id": 485485,
+      "annotation_id": 753019,
+      "prompt": "a couple of elephants are standing in a pin"
+    },
+    {
+      "image_id": 38090,
+      "annotation_id": 331755,
+      "prompt": "A living room where people sit and talk and without a television."
+    },
+    {
+      "image_id": 491242,
+      "annotation_id": 381125,
+      "prompt": "A man in red jacket skiing in between trees."
+    },
+    {
+      "image_id": 229387,
+      "annotation_id": 650016,
+      "prompt": "An unhappy cat wearing a puffy pink beanie"
+    },
+    {
+      "image_id": 231079,
+      "annotation_id": 19233,
+      "prompt": "A surfer is on a board riding a wave."
+    },
+    {
+      "image_id": 25529,
+      "annotation_id": 74374,
+      "prompt": "A plate of food with a sandwich and fries."
+    },
+    {
+      "image_id": 516212,
+      "annotation_id": 37368,
+      "prompt": "A cat sitting on top of a microwave oven."
+    },
+    {
+      "image_id": 543547,
+      "annotation_id": 753094,
+      "prompt": "A man walks beside an elephant as people ride by on the street."
+    },
+    {
+      "image_id": 343038,
+      "annotation_id": 608462,
+      "prompt": "An person is doing something at this time that is marvelous."
+    },
+    {
+      "image_id": 98187,
+      "annotation_id": 687212,
+      "prompt": "A man is walking towards his kite on the ground."
+    },
+    {
+      "image_id": 503845,
+      "annotation_id": 225275,
+      "prompt": "A yellow train traveling down train tracks past a bridge.."
+    },
+    {
+      "image_id": 27610,
+      "annotation_id": 675429,
+      "prompt": "Four people are looking at a cell phone."
+    },
+    {
+      "image_id": 237207,
+      "annotation_id": 57518,
+      "prompt": "Two semi trucks are face to face along side a roadway."
+    },
+    {
+      "image_id": 406093,
+      "annotation_id": 483619,
+      "prompt": "A plate with pancakes that have fruit on top and with a cup"
+    },
+    {
+      "image_id": 496597,
+      "annotation_id": 46680,
+      "prompt": "Two people riding a small boat across a massive lake surrounded by mountains."
+    },
+    {
+      "image_id": 430774,
+      "annotation_id": 46536,
+      "prompt": "a restaurant called time to eat on lincoln avenue"
+    },
+    {
+      "image_id": 133619,
+      "annotation_id": 171627,
+      "prompt": "A large red fire truck standing in front of a building."
+    },
+    {
+      "image_id": 549718,
+      "annotation_id": 409494,
+      "prompt": "A blue and yellow city bus driving down the street"
+    },
+    {
+      "image_id": 209753,
+      "annotation_id": 437537,
+      "prompt": "A woman with large black tear drop earrings and a black dress looks at her cell phone."
+    },
+    {
+      "image_id": 184938,
+      "annotation_id": 80,
+      "prompt": "Light colored teddy bear dressed in a hoodie and pants"
+    },
+    {
+      "image_id": 432796,
+      "annotation_id": 150432,
+      "prompt": "A couple of swans swimming in a pond next to two people."
+    },
+    {
+      "image_id": 426268,
+      "annotation_id": 301807,
+      "prompt": "A large long train with man inside on the track."
+    },
+    {
+      "image_id": 270316,
+      "annotation_id": 10130,
+      "prompt": "A delivery truck parked in front of a store on a street."
+    },
+    {
+      "image_id": 7325,
+      "annotation_id": 358621,
+      "prompt": "A red fancy bus is parked by a standing man."
+    },
+    {
+      "image_id": 478980,
+      "annotation_id": 479023,
+      "prompt": "A man riding a skateboard while wearing a helmet."
+    },
+    {
+      "image_id": 363272,
+      "annotation_id": 13138,
+      "prompt": "A man sitting on a stone block talking on a cell phone."
+    },
+    {
+      "image_id": 560700,
+      "annotation_id": 479815,
+      "prompt": "A bottle sitting on top of a white shelf under a metal shelf."
+    },
+    {
+      "image_id": 130456,
+      "annotation_id": 748291,
+      "prompt": "A laptop and two controllers on a small table in front of a couch."
+    },
+    {
+      "image_id": 105156,
+      "annotation_id": 159182,
+      "prompt": "A horse stands still attached to a passenger coach."
+    },
+    {
+      "image_id": 252008,
+      "annotation_id": 625731,
+      "prompt": "A zebra standing on top of a lush green field."
+    },
+    {
+      "image_id": 369601,
+      "annotation_id": 126006,
+      "prompt": "COLORFUL BRIGHT EYED CAT SURROUNDED BY ALL BLACK AND WHITE BOTTLES AND CANS"
+    },
+    {
+      "image_id": 30895,
+      "annotation_id": 653172,
+      "prompt": "A bed topped with lots of pillows next to a table."
+    },
+    {
+      "image_id": 253835,
+      "annotation_id": 648726,
+      "prompt": "A woman and a small child watch a train as it passes."
+    },
+    {
+      "image_id": 69553,
+      "annotation_id": 716431,
+      "prompt": "there is a close up picture of a train going down the tracks"
+    },
+    {
+      "image_id": 480944,
+      "annotation_id": 322692,
+      "prompt": "A traffic light sitting on the side of a road."
+    },
+    {
+      "image_id": 528314,
+      "annotation_id": 639244,
+      "prompt": "a man that is skiing down a snowy slope"
+    },
+    {
+      "image_id": 153994,
+      "annotation_id": 172155,
+      "prompt": "A person walking in the rain holding an umbrella."
+    },
+    {
+      "image_id": 499104,
+      "annotation_id": 474672,
+      "prompt": "two polar bears playing with each other"
+    },
+    {
+      "image_id": 2562,
+      "annotation_id": 267259,
+      "prompt": "A man hitting a tennis ball with a racquet."
+    },
+    {
+      "image_id": 467742,
+      "annotation_id": 207595,
+      "prompt": "A woman carrying a red purse filled with hot dogs."
+    },
+    {
+      "image_id": 263520,
+      "annotation_id": 164258,
+      "prompt": "A lone giraffe stands in the middle of a grassy field."
+    },
+    {
+      "image_id": 300246,
+      "annotation_id": 753148,
+      "prompt": "An elephant with a person on top of it in a street."
+    },
+    {
+      "image_id": 270386,
+      "annotation_id": 804107,
+      "prompt": "The black street pole has three different signs on it."
+    },
+    {
+      "image_id": 26731,
+      "annotation_id": 325035,
+      "prompt": "A white van covered in spray paint next to buildings."
+    },
+    {
+      "image_id": 540498,
+      "annotation_id": 401188,
+      "prompt": "Two men who are both holding some oranges."
+    },
+    {
+      "image_id": 140513,
+      "annotation_id": 45569,
+      "prompt": "Three zebras standing in the middle of a plain in the wild."
+    },
+    {
+      "image_id": 204188,
+      "annotation_id": 669084,
+      "prompt": "A modern toilet is seen in this picture."
+    },
+    {
+      "image_id": 49567,
+      "annotation_id": 759525,
+      "prompt": "three luggage bags piled up on top of one another"
+    },
+    {
+      "image_id": 232503,
+      "annotation_id": 653828,
+      "prompt": "City buses prepare to leave the bus station"
+    },
+    {
+      "image_id": 578553,
+      "annotation_id": 805522,
+      "prompt": "An open laptop sitting in an open suitcase."
+    },
+    {
+      "image_id": 229647,
+      "annotation_id": 791517,
+      "prompt": "The giraffes are standing in the fenced area."
+    },
+    {
+      "image_id": 568154,
+      "annotation_id": 667514,
+      "prompt": "A young man holding a surfboard while standing near a river."
+    },
+    {
+      "image_id": 355881,
+      "annotation_id": 97143,
+      "prompt": "a bowl of fruit, veggies, and sushi on a table"
+    },
+    {
+      "image_id": 350405,
+      "annotation_id": 424080,
+      "prompt": "A snowboarder sailing down a snowy hillside on a mountain."
+    },
+    {
+      "image_id": 53058,
+      "annotation_id": 460280,
+      "prompt": "there is a older man sitting and using a lap top"
+    },
+    {
+      "image_id": 443844,
+      "annotation_id": 306196,
+      "prompt": "A man riding a skateboard on top of a wooden bench."
+    },
+    {
+      "image_id": 502214,
+      "annotation_id": 539193,
+      "prompt": "Two surfers carrying boards, viewed over a man's shoulder."
+    },
+    {
+      "image_id": 361245,
+      "annotation_id": 494059,
+      "prompt": "Some people are skiing in the snowy woods"
+    },
+    {
+      "image_id": 319706,
+      "annotation_id": 426579,
+      "prompt": "A cat sits on a desk in front of a computer."
+    },
+    {
+      "image_id": 35526,
+      "annotation_id": 795062,
+      "prompt": "A bathroom with a bathtub, separate shower, sink, cabinets and mirror."
+    },
+    {
+      "image_id": 518773,
+      "annotation_id": 200078,
+      "prompt": "A large sandwich filled with meat and peppers."
+    },
+    {
+      "image_id": 374734,
+      "annotation_id": 77670,
+      "prompt": "A man crosses his water skis while parasailing."
+    },
+    {
+      "image_id": 502715,
+      "annotation_id": 460421,
+      "prompt": "A bird walks along on a beach with other members of its kind."
+    },
+    {
+      "image_id": 89367,
+      "annotation_id": 157114,
+      "prompt": "A child holding a knife admires a pizza."
+    },
+    {
+      "image_id": 348701,
+      "annotation_id": 72406,
+      "prompt": "A person doing skate tricks in an outdoor park"
+    },
+    {
+      "image_id": 548159,
+      "annotation_id": 130439,
+      "prompt": "Two rows of red double decker buses on a green lawn"
+    },
+    {
+      "image_id": 285235,
+      "annotation_id": 289295,
+      "prompt": "A Group of cow's that are smelling each other."
+    },
+    {
+      "image_id": 273889,
+      "annotation_id": 354386,
+      "prompt": "A woman walking along a tennis court holding a tennis racquet."
+    },
+    {
+      "image_id": 292990,
+      "annotation_id": 696649,
+      "prompt": "Baseball players on a field and near empty stadium."
+    },
+    {
+      "image_id": 213434,
+      "annotation_id": 117311,
+      "prompt": "A baseball player running on a field during a game."
+    },
+    {
+      "image_id": 389804,
+      "annotation_id": 625707,
+      "prompt": "A modern bathroom with hardwood flooring and counter tops."
+    },
+    {
+      "image_id": 17923,
+      "annotation_id": 513256,
+      "prompt": "A dog curled up on a mans shoes."
+    },
+    {
+      "image_id": 358617,
+      "annotation_id": 291419,
+      "prompt": "A man walking along a beach holding a surfboard."
+    },
+    {
+      "image_id": 569850,
+      "annotation_id": 75851,
+      "prompt": "A road sign warning of Resident Permit Parking Only."
+    },
+    {
+      "image_id": 322057,
+      "annotation_id": 491568,
+      "prompt": "Two cats are laying in the chair sleeping."
+    },
+    {
+      "image_id": 383413,
+      "annotation_id": 547400,
+      "prompt": "A bear and a cub sniffing the end of a log."
+    },
+    {
+      "image_id": 18837,
+      "annotation_id": 710663,
+      "prompt": "A green utility truck is parked on a street while a man climbs inside."
+    },
+    {
+      "image_id": 225943,
+      "annotation_id": 283621,
+      "prompt": "A dinner plate with a stir-fry dish of broccoli and rice."
+    },
+    {
+      "image_id": 331455,
+      "annotation_id": 181377,
+      "prompt": "A bird is flying next to a ship in the ocean."
+    },
+    {
+      "image_id": 67412,
+      "annotation_id": 376383,
+      "prompt": "A group of people gather in an open area and fly kites."
+    },
+    {
+      "image_id": 130508,
+      "annotation_id": 391919,
+      "prompt": "A blue train rides down a wooded track."
+    },
+    {
+      "image_id": 413948,
+      "annotation_id": 654483,
+      "prompt": "A person skis down a slope of snow"
+    },
+    {
+      "image_id": 512220,
+      "annotation_id": 565239,
+      "prompt": "A man sitting in front of a doorway holding a cell phone."
+    },
+    {
+      "image_id": 293244,
+      "annotation_id": 752037,
+      "prompt": "A GREEN AND BROWN SUITCASE LYING UP ON A LEDGE"
+    },
+    {
+      "image_id": 136841,
+      "annotation_id": 617049,
+      "prompt": "a person in a beanie is taking a picture"
+    },
+    {
+      "image_id": 388873,
+      "annotation_id": 81963,
+      "prompt": "There is a big stop sign colored in red and white"
+    },
+    {
+      "image_id": 269429,
+      "annotation_id": 353408,
+      "prompt": "A living room, complete with couch, coffee table, shelving unit and tv set."
+    },
+    {
+      "image_id": 471869,
+      "annotation_id": 35021,
+      "prompt": "A teddy bear sitting on a blue chair."
+    },
+    {
+      "image_id": 30407,
+      "annotation_id": 583845,
+      "prompt": "A pile of cell phones sitting on top of a table."
+    },
+    {
+      "image_id": 172924,
+      "annotation_id": 764593,
+      "prompt": "The railroad crossing is protected by lights and barriers."
+    },
+    {
+      "image_id": 455157,
+      "annotation_id": 69055,
+      "prompt": "Man sitting at a picnic table using a laptop shaded by an umbrella."
+    },
+    {
+      "image_id": 283977,
+      "annotation_id": 52874,
+      "prompt": "Two large trey elephants standing next to a man wearing a blue uniform."
+    },
+    {
+      "image_id": 36528,
+      "annotation_id": 395651,
+      "prompt": "The airplane is about ready to get take off from the runway."
+    },
+    {
+      "image_id": 155571,
+      "annotation_id": 52441,
+      "prompt": "An elephant walking across a green grass covered field."
+    },
+    {
+      "image_id": 111702,
+      "annotation_id": 143739,
+      "prompt": "Three cakes decorated with flowers on the top and the words \"best wishes\" written on the cakes."
+    }
+  ],
+  "test_seeds": [
+    2026
+  ],
+  "ablation_image_ids": [
+    559778,
+    460430,
+    215826,
+    177953,
+    325157,
+    485485,
+    38090,
+    491242,
+    229387,
+    231079,
+    25529,
+    516212,
+    543547,
+    343038,
+    98187,
+    503845
+  ],
+  "excluded_previous_image_ids": [
+    4438,
+    4497,
+    16046,
+    17178,
+    41923,
+    45478,
+    50407,
+    61997,
+    102331,
+    113097,
+    113588,
+    126592,
+    129756,
+    148077,
+    160836,
+    167818,
+    169356,
+    179898,
+    180411,
+    184874,
+    193704,
+    205514,
+    209868,
+    227958,
+    230721,
+    239048,
+    250745,
+    259640,
+    306749,
+    332351,
+    335374,
+    356347,
+    398666,
+    398726,
+    435783,
+    442214,
+    455548,
+    463296,
+    467138,
+    475042,
+    502240,
+    519801,
+    528496,
+    542939,
+    545475,
+    567886,
+    574108,
+    579402
+  ],
+  "protocol": {
+    "kind": "frozen_confirmation",
+    "calibration_and_validation_reused_from": "manifests/round2.json",
+    "primary_comparison": "calibrated minus uniform, mean LPIPS to identical-latent DDIM50",
+    "uncertainty": "paired prompt-cluster bootstrap, two-sided 95% interval",
+    "secondary_metrics": [
+      "CLIP cosine",
+      "latency",
+      "memory"
+    ],
+    "budgets": [
+      10,
+      17,
+      25
+    ],
+    "budget_ablation_subset": "first 16 test prompts before any new outputs are inspected",
+    "no_new_parameter_selection": true
+  }
+}

@@ -1,0 +1,34 @@
+# Local environments, downloaded assets, and raw datasets.
+/.venv/
+/.cache/
+/models/
+/data/raw/
+
+# Course lecture extracts and previews can be regenerated locally.
+/research/
+
+# Keep compact experiment evidence, policies, and aggregate calibration costs.
+# Full generated image sets and per-trajectory tensors stay on the local disk.
+/results/**/images/
+/results/pilot/calibration/*.npy
+/results/round2/diagnostics/trace_*.npz
+
+# Python and tool caches.
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local credentials and editor/OS state.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

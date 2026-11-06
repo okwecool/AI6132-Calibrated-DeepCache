@@ -1,0 +1,9 @@
+{
+  "src/cache_policy.py": "5a4addf851e36048b0625f9454efc9b8a8e09c6538c8166fb3a861441a911211",
+  "scripts/run_pilot.py": "aff6c69c90236eb0da868ab66f13cbee310fbfb3a9df028cc730e60d14bb97fb",
+  "scripts/evaluate_pilot.py": "54a6dd84debf2cb0a3674cb555e1adde815bbd4aa0aef5d66511df389b179e51",
+  "scripts/prepare_assets.py": "e11d15102bd8c2f364b14658d57a21efaef6fefe09846df58f26a0bce67ccb0e",
+  "scripts/write_pilot_report.py": "4215f5ff14d67fbf944d66d02bbb4c7da74109c9ab0014ed2a601051a1ff5eb4",
+  "manifests/pilot.json": "ac8312ee01ee38dce7fd5559d06c99a2d8fc419c7fcc52da4a8415ffd834ef5e",
+  "requirements.txt": "0e09167165b151d51d52d5a8dccc29f9a0532fa1c7859a3520c9b8400216d9ea"
+}

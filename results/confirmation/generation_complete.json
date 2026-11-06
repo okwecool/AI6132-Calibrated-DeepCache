@@ -1,0 +1,13 @@
+{
+  "test_images": 500,
+  "expected_pairs": 100,
+  "methods": [
+    "ddim50",
+    "uniform",
+    "paper_nonuniform",
+    "calibrated",
+    "dpmpp_matched"
+  ],
+  "manifest": "manifests/confirmation.json",
+  "kind": "frozen_confirmation"
+}

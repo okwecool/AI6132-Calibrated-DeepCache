@@ -1,0 +1,14 @@
+{
+  "test_images": 192,
+  "expected_pairs": 32,
+  "methods": [
+    "ddim50",
+    "uniform",
+    "paper_nonuniform",
+    "feature_calibrated",
+    "calibrated",
+    "dpmpp_matched"
+  ],
+  "manifest": "manifests/round2.json",
+  "round": 2
+}

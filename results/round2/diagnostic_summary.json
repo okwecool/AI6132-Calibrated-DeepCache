@@ -1,0 +1,42 @@
+{
+  "probe_cases": 1880,
+  "calibration_prompts": 8,
+  "seconds_this_invocation": 109.08277760026976,
+  "full_replay_max_error": 0.0,
+  "associations": {
+    "noise_mse": {
+      "overall_spearman": 0.7780977193694445,
+      "rank_correlation_after_step_and_age_fixed_effects": 0.5671835122372231,
+      "per_age_spearman": {
+        "1": 0.44487791797767895,
+        "2": 0.41870570682581126,
+        "3": 0.38554162198769676,
+        "4": 0.3500916933704345,
+        "5": 0.33627923674046145
+      }
+    },
+    "relative_noise_mse": {
+      "overall_spearman": 0.7788777451001585,
+      "rank_correlation_after_step_and_age_fixed_effects": 0.5919911339163773,
+      "per_age_spearman": {
+        "1": 0.47605016118628,
+        "2": 0.4469634803838459,
+        "3": 0.4117602573508663,
+        "4": 0.37736589603782544,
+        "5": 0.3569068176966386
+      }
+    },
+    "step_mse": {
+      "overall_spearman": 0.7195171910204625,
+      "rank_correlation_after_step_and_age_fixed_effects": 0.6074701896685952,
+      "per_age_spearman": {
+        "1": 0.5574188520413144,
+        "2": 0.52023159608016,
+        "3": 0.496291664315142,
+        "4": 0.47940511036433675,
+        "5": 0.4693228085607656
+      }
+    }
+  },
+  "warning": "Counterfactuals use the uncached reference latent trajectory; they are local errors, not full rollout/ground-truth image quality. Fixed effects are exploratory, not causal."
+}

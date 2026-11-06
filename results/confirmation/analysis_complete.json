@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "main_test_images": 500,
+  "ablation_new_images": 64,
+  "timing_audit": "timing_repairs.json"
+}

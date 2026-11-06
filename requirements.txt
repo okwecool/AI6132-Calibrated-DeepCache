@@ -1,0 +1,9 @@
+# CUDA PyTorch is supplied by the local env_cuda environment; see README.
+diffusers==0.35.1
+DeepCache==0.1.1
+transformers==4.49.0
+huggingface-hub==0.36.2
+accelerate==1.5.2
+lpips==0.1.4
+scipy==1.15.3
+matplotlib==3.10.8

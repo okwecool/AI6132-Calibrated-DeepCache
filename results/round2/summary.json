@@ -1,0 +1,190 @@
+{
+  "methods": {
+    "ddim50": {
+      "n": 32,
+      "median_seconds": 5.470227950019762,
+      "mean_seconds": 5.889068431279156,
+      "median_unet_seconds": 5.261551895141602,
+      "max_peak_allocated_mib": 2676.34912109375,
+      "max_peak_reserved_mib": 3310.0,
+      "mean_clip_cosine": 0.32020790223032236,
+      "mean_lpips_to_ddim50": 0.0,
+      "full_refresh_count": 50,
+      "unet_calls": 50,
+      "speedup_vs_ddim50": 1.0
+    },
+    "uniform": {
+      "n": 32,
+      "median_seconds": 2.315700450213626,
+      "mean_seconds": 2.4122648281481816,
+      "median_unet_seconds": 2.1132389492988586,
+      "max_peak_allocated_mib": 2788.67724609375,
+      "max_peak_reserved_mib": 3348.0,
+      "mean_clip_cosine": 0.32493414729833603,
+      "mean_lpips_to_ddim50": 0.18027401168365031,
+      "full_refresh_count": 17,
+      "unet_calls": 50,
+      "speedup_vs_ddim50": 2.3622346964241974
+    },
+    "paper_nonuniform": {
+      "n": 32,
+      "median_seconds": 2.3133457999210805,
+      "mean_seconds": 2.5159570156392874,
+      "median_unet_seconds": 2.1135651063919068,
+      "max_peak_allocated_mib": 2791.30224609375,
+      "max_peak_reserved_mib": 3348.0,
+      "mean_clip_cosine": 0.32451954763382673,
+      "mean_lpips_to_ddim50": 0.17418507032562047,
+      "full_refresh_count": 17,
+      "unet_calls": 50,
+      "speedup_vs_ddim50": 2.364639108518224
+    },
+    "feature_calibrated": {
+      "n": 32,
+      "median_seconds": 2.3163751498796046,
+      "mean_seconds": 2.4647411687328713,
+      "median_unet_seconds": 2.113368953227997,
+      "max_peak_allocated_mib": 2790.92724609375,
+      "max_peak_reserved_mib": 3348.0,
+      "mean_clip_cosine": 0.3265546653419733,
+      "mean_lpips_to_ddim50": 0.1782182640163228,
+      "full_refresh_count": 17,
+      "unet_calls": 50,
+      "speedup_vs_ddim50": 2.361546639068409
+    },
+    "calibrated": {
+      "n": 32,
+      "median_seconds": 2.3108973999042064,
+      "mean_seconds": 2.479199853099999,
+      "median_unet_seconds": 2.110978039264679,
+      "max_peak_allocated_mib": 2790.92724609375,
+      "max_peak_reserved_mib": 3348.0,
+      "mean_clip_cosine": 0.3241753624752164,
+      "mean_lpips_to_ddim50": 0.1655429257079959,
+      "full_refresh_count": 17,
+      "unet_calls": 50,
+      "speedup_vs_ddim50": 2.367144447973553
+    },
+    "dpmpp_matched": {
+      "n": 32,
+      "median_seconds": 2.2675107000395656,
+      "mean_seconds": 2.3065696812846,
+      "median_unet_seconds": 2.100567386627197,
+      "max_peak_allocated_mib": 2676.41162109375,
+      "max_peak_reserved_mib": 3310.0,
+      "mean_clip_cosine": 0.32376712933182716,
+      "mean_lpips_to_ddim50": 0.18283342896029353,
+      "full_refresh_count": 20,
+      "unet_calls": 20,
+      "speedup_vs_ddim50": 2.4124375465678343
+    }
+  },
+  "paired_differences": {
+    "calibrated_minus_uniform": {
+      "lpips_to_ddim50": {
+        "mean_difference": -0.014731085975654423,
+        "cluster_bootstrap_95pct_ci": [
+          -0.03198660849884618,
+          0.0022261028410866654
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus uniform",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      },
+      "clip_cosine": {
+        "mean_difference": -0.0007587848231196404,
+        "cluster_bootstrap_95pct_ci": [
+          -0.00671101079788059,
+          0.003126596566289663
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus uniform",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      },
+      "seconds": {
+        "mean_difference": 0.06693502495181747,
+        "cluster_bootstrap_95pct_ci": [
+          -0.03731619320169557,
+          0.19667295182953232
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus uniform",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      }
+    },
+    "calibrated_minus_paper_nonuniform": {
+      "lpips_to_ddim50": {
+        "mean_difference": -0.00864214461762458,
+        "cluster_bootstrap_95pct_ci": [
+          -0.026619392685825003,
+          0.007484155712882048
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus paper_nonuniform",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      },
+      "clip_cosine": {
+        "mean_difference": -0.00034418515861034393,
+        "cluster_bootstrap_95pct_ci": [
+          -0.004079598002135754,
+          0.0028994592837989323
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus paper_nonuniform",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      },
+      "seconds": {
+        "mean_difference": -0.0367571625392884,
+        "cluster_bootstrap_95pct_ci": [
+          -0.17466975067836757,
+          0.11329757849998696
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus paper_nonuniform",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      }
+    },
+    "calibrated_minus_feature_calibrated": {
+      "lpips_to_ddim50": {
+        "mean_difference": -0.0126753383083269,
+        "cluster_bootstrap_95pct_ci": [
+          -0.025151390183600596,
+          -0.0018021808034973268
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus feature_calibrated",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      },
+      "clip_cosine": {
+        "mean_difference": -0.002379302866756916,
+        "cluster_bootstrap_95pct_ci": [
+          -0.00666790553368628,
+          0.0005637706257402893
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus feature_calibrated",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      },
+      "seconds": {
+        "mean_difference": 0.014458684367127717,
+        "cluster_bootstrap_95pct_ci": [
+          -0.15007237809877552,
+          0.18908485233550887
+        ],
+        "clusters": 16,
+        "comparison": "calibrated minus feature_calibrated",
+        "note": "Exploratory paired prompt-cluster bootstrap; very small pilot, not confirmatory evidence"
+      }
+    }
+  },
+  "clip_metric": "Raw cosine of normalized CLIP ViT-B/32 embeddings, no scaling; not directly comparable with other CLIPScore protocols",
+  "quality_reference": "DDIM50 output with identical prompt and initial latent, not COCO image ground truth",
+  "timing": "One measured generation per prompt/seed/method after warmup; randomized order; no repeat-based latency confidence claim",
+  "sample_size": {
+    "test_prompts": 16,
+    "test_seeds": 2,
+    "calibration_prompts": 8,
+    "validation_prompts": 8
+  },
+  "manifest": "manifests/round2.json"
+}
