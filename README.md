@@ -184,6 +184,30 @@ See `AGENTS.md` for the repository working rules.
 
 ## Product background replacement: design
 
-The proposed application extension is described in
-[the product background replacement design](docs/product_background_replacement_design.md).
-It is a design for a new inpainting task, not an implemented or evaluated result.
+The [product background replacement design](docs/product_background_replacement_design.md)
+defines the research protocol. The M1 runner uses a dedicated SD inpainting
+checkpoint, a supplied foreground mask, and optional DeepCache refreshes.
+Prepare the pinned model once, then run inference offline.
+
+```powershell
+& '.\.venv\Scripts\python.exe' scripts/prepare_background_assets.py
+& '.\.venv\Scripts\python.exe' scripts/run_background.py smoke --output results/product_background/recheck
+& '.\.venv\Scripts\python.exe' scripts/run_background.py generate --image input.png --foreground mask.png --prompt "a bottle on a pale stone counter, studio lighting" --steps 50 --interval 3 --output results/product_background/demo
+```
+
+Use a foreground mask aligned with the source image. White pixels protect the
+product and black pixels mark the editable background. The runner fits both to
+the same 512×512 canvas and saves the prepared inputs, raw generation, and
+composite. The composite restores the prepared foreground pixels exactly.
+Omit `--interval` for uncached DDIM. Use a new output directory for each run.
+See the [M1 validation report](results/product_background/m1/report.md) for
+the GPU checks, timing scope, and the observed foreground boundary artifact.
+
+The [real product photo pilot](results/product_background/photo_pilot/report.md)
+compares two prompt styles and two cache settings on four Finegrain examples.
+The manifest records the source rows, file hashes, prompts, and seeds.
+
+```powershell
+& '.\.venv\Scripts\python.exe' scripts/run_background_photo_pilot.py --prepare
+& '.\.venv\Scripts\python.exe' scripts/run_background_photo_pilot.py --output results/product_background/photo_pilot_recheck
+```

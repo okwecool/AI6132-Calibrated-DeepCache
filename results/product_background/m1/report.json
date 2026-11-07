@@ -1,0 +1,249 @@
+{
+  "fixture_source": "procedurally drawn engineering fixtures",
+  "checks": {
+    "bottle": {
+      "seed": 6132,
+      "prompt": "a red bottle on a light stone counter, soft studio lighting, product photography",
+      "unet_input_shape": [
+        2,
+        9,
+        64,
+        64
+      ],
+      "interval1_vs_uncached": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "scheduled_vs_official": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "uncached_vs_cached_pixel_delta": 200,
+      "observed_refreshes": [
+        0,
+        3
+      ]
+    },
+    "box": {
+      "seed": 6133,
+      "prompt": "a brown gift box on a dark wooden tabletop, warm window light, product photography",
+      "unet_input_shape": [
+        2,
+        9,
+        64,
+        64
+      ],
+      "interval1_vs_uncached": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "scheduled_vs_official": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "uncached_vs_cached_pixel_delta": 174,
+      "observed_refreshes": [
+        0,
+        3
+      ]
+    },
+    "bag": {
+      "seed": 6134,
+      "prompt": "a blue handbag on a cream fabric display stand, boutique product photography",
+      "unet_input_shape": [
+        2,
+        9,
+        64,
+        64
+      ],
+      "interval1_vs_uncached": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "scheduled_vs_official": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "uncached_vs_cached_pixel_delta": 255,
+      "observed_refreshes": [
+        0,
+        3
+      ]
+    },
+    "mug": {
+      "seed": 6135,
+      "prompt": "a green ceramic mug on a grey concrete tabletop, soft morning light",
+      "unet_input_shape": [
+        2,
+        9,
+        64,
+        64
+      ],
+      "interval1_vs_uncached": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "scheduled_vs_official": {
+        "pixel_max_delta": 0,
+        "latent_max_delta": 0.0
+      },
+      "uncached_vs_cached_pixel_delta": 146,
+      "observed_refreshes": [
+        0,
+        3
+      ]
+    }
+  },
+  "cache_isolation": {
+    "pixel_max_delta": 0,
+    "latent_max_delta": 0.0
+  },
+  "timings": {
+    "ddim50": {
+      "steps": 50,
+      "refresh_steps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "seconds": 5.484789699781686,
+      "unet_seconds": 5.145473442077637,
+      "peak_allocated_mib": 2681.12744140625,
+      "peak_reserved_mib": 3220.0
+    },
+    "scheduled_uniform17": {
+      "steps": 50,
+      "refresh_steps": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48
+      ],
+      "seconds": 2.3541919998824596,
+      "unet_seconds": 2.0477808246612548,
+      "peak_allocated_mib": 2797.14306640625,
+      "peak_reserved_mib": 3220.0
+    }
+  },
+  "model": {
+    "repo_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+    "revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+    "sha256": {
+      "README.md": "6f5758cfeabddb509b09399d6f0879056c5fd0002d7d9849bc183a6de9a98ab0",
+      "model_index.json": "636d700de8970a70f02b91d433ad949dc2ceb750f39ba0cf2cf39ef0b0b9d1e4",
+      "scheduler/scheduler_config.json": "8b457848b74deeeab2a967b75048dd2cb6f393cfc17751eca1b5ec655cff0183",
+      "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "tokenizer/tokenizer_config.json": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "text_encoder/config.json": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "text_encoder/model.fp16.safetensors": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+      "unet/config.json": "669f6581087fac5b16c44e42c58b359a35eadf2af5691d7945480bd7ceac8e6d",
+      "unet/diffusion_pytorch_model.fp16.safetensors": "24b788b4a777748377cc20364eea4ae113c8c42f4468c16bc8c02fdae5492af9",
+      "vae/config.json": "4cd0ce4803567837175fbb8412689fe77d069c1ef8171beb83979db309a8bad5",
+      "vae/diffusion_pytorch_model.fp16.safetensors": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "diffusers": "0.35.1",
+    "DeepCache": "0.1.1"
+  },
+  "configuration": {
+    "resolution": 512,
+    "cfg": 7.5,
+    "strength": 1.0,
+    "eta": 0.0,
+    "dtype": "float16",
+    "scheduler": {
+      "num_train_timesteps": 1000,
+      "beta_start": 0.00085,
+      "beta_end": 0.012,
+      "beta_schedule": "scaled_linear",
+      "trained_betas": null,
+      "clip_sample": false,
+      "set_alpha_to_one": false,
+      "steps_offset": 1,
+      "prediction_type": "epsilon",
+      "thresholding": false,
+      "dynamic_thresholding_ratio": 0.995,
+      "clip_sample_range": 1.0,
+      "sample_max_value": 1.0,
+      "timestep_spacing": "leading",
+      "rescale_betas_zero_snr": false,
+      "_use_default_values": [
+        "timestep_spacing",
+        "prediction_type",
+        "clip_sample_range",
+        "thresholding",
+        "sample_max_value",
+        "dynamic_thresholding_ratio",
+        "rescale_betas_zero_snr"
+      ],
+      "_class_name": "DDIMScheduler",
+      "_diffusers_version": "0.6.0.dev0",
+      "skip_prk_steps": true
+    }
+  }
+}

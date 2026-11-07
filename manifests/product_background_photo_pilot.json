@@ -1,0 +1,121 @@
+{
+  "source": {
+    "repo": "finegrain/finegrain-product-masks-lite",
+    "revision": "17c618f809f87091e35533e0c4dacda065448d7d",
+    "config": "default",
+    "split": "test",
+    "card": "https://huggingface.co/datasets/finegrain/finegrain-product-masks-lite",
+    "declared_license": "MIT"
+  },
+  "purpose": "Exploratory real-photo pilot; exclude these rows from future held-out evaluation.",
+  "selection": "Inspect only source photos and masks; pick four distinct products with different background and mask difficulty.",
+  "steps": 50,
+  "cache_interval": 3,
+  "seeds": [
+    6132,
+    2026
+  ],
+  "order_seed": 2607,
+  "cases": [
+    {
+      "row_idx": 40,
+      "image": {
+        "size": [
+          2001,
+          2001
+        ],
+        "sha256": "03df9a247de6c86c1544073ac5bcb38df7cc40f923a04d38d4582c376f2aaeb1",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          2001,
+          2001
+        ],
+        "sha256": "76fc30c6777e5991882c22b33f921e738c82774175f0a7b0ed31671cb8bbc22d",
+        "mode": "L"
+      },
+      "name": "running_shoe",
+      "foreground_fraction_at_512": 0.20305633544921875,
+      "prompts": {
+        "background": "A pale concrete display plinth, a warm beige studio backdrop, and soft light from the left. Product photography.",
+        "named": "A single white running shoe with a yellow sole. A pale concrete display plinth, a warm beige studio backdrop, and soft light from the left. Product photography."
+      }
+    },
+    {
+      "row_idx": 41,
+      "image": {
+        "size": [
+          800,
+          800
+        ],
+        "sha256": "cf0bfa4324b40bbdda4dd3fdad786e719d93e152f6ea92ae10b5bdf052d72bf4",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          800,
+          800
+        ],
+        "sha256": "20f01442606c497614e15ec9f98ba30ed4ee02c93c0b6fa1f91743fcf65eefad",
+        "mode": "L"
+      },
+      "name": "child_chair",
+      "foreground_fraction_at_512": 0.0976715087890625,
+      "prompts": {
+        "background": "A light oak floor against a pale sage green wall, with soft daylight from the left. Product photography.",
+        "named": "A single white and wood children's chair. A light oak floor against a pale sage green wall, with soft daylight from the left. Product photography."
+      }
+    },
+    {
+      "row_idx": 81,
+      "image": {
+        "size": [
+          2000,
+          2000
+        ],
+        "sha256": "dcd3055366a71030291815890f699c074e5cce9c0c1ebc337457c114a903d651",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          2000,
+          2000
+        ],
+        "sha256": "6730aca21d75d96096cf79ef8fa9d09d67c59d57759ff762f0092d0eeece1072",
+        "mode": "L"
+      },
+      "name": "striped_cup",
+      "foreground_fraction_at_512": 0.06355667114257812,
+      "prompts": {
+        "background": "A dark walnut tabletop against a softly lit cream wall, with warm window light. Product photography.",
+        "named": "A single small striped ceramic cup. A dark walnut tabletop against a softly lit cream wall, with warm window light. Product photography."
+      }
+    },
+    {
+      "row_idx": 115,
+      "image": {
+        "size": [
+          768,
+          1176
+        ],
+        "sha256": "875ec8ca38936abe2cc91eb2dc891420131cf191881831020252118daf0367cf",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          768,
+          1176
+        ],
+        "sha256": "106c14db62923749b21cc73faab42c92bc5358316b4a6508cb2757486c4ec884",
+        "mode": "L"
+      },
+      "name": "perfume_bottle",
+      "foreground_fraction_at_512": 0.2654685974121094,
+      "prompts": {
+        "background": "A pale pink marble display surface and a soft rose studio backdrop with diffused light. Product photography.",
+        "named": "A single rectangular glass perfume bottle. A pale pink marble display surface and a soft rose studio backdrop with diffused light. Product photography."
+      }
+    }
+  ]
+}
