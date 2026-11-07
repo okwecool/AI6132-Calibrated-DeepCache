@@ -234,3 +234,13 @@ jobs from their local outputs when the run provenance still matches.
 & '.\.venv\Scripts\python.exe' scripts/run_background_m3.py --output results/product_background/m3_recheck
 & '.\.venv\Scripts\python.exe' scripts/evaluate_background_m3.py --output results/product_background/m3_recheck
 ```
+
+The [21-refresh ablation](results/product_background/ablation21/report.md)
+compares the uniform, global-cost and boundary-weighted schedules on the M3
+inputs and references. It reuses the frozen M2 cost matrices. The run is
+exploratory because the M3 outputs were already analyzed.
+
+```powershell
+& '.\.venv\Scripts\python.exe' scripts/run_background_ablation21.py
+& '.\.venv\Scripts\python.exe' scripts/evaluate_background_ablation21.py
+```

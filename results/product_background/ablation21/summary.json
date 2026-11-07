@@ -1,0 +1,130 @@
+{
+  "methods": {
+    "uniform21": {
+      "samples": 48,
+      "roi_lpips": 0.02599177377608915,
+      "full_lpips": 0.051978537002772406,
+      "ring_rgb_mae": 5.1058108905951185,
+      "background_rgb_mae": 5.806312131385009,
+      "median_seconds": 2.834634049795568,
+      "median_unet_seconds": 2.512244228363037,
+      "peak_allocated_mib": 2796.29931640625,
+      "peak_reserved_mib": 3220.0
+    },
+    "global21": {
+      "samples": 48,
+      "roi_lpips": 0.019339108483109158,
+      "full_lpips": 0.040406110582504574,
+      "ring_rgb_mae": 4.142509418229262,
+      "background_rgb_mae": 4.63209376980861,
+      "median_seconds": 2.7990077000577003,
+      "median_unet_seconds": 2.464268904685974,
+      "peak_allocated_mib": 2794.36181640625,
+      "peak_reserved_mib": 3220.0
+    },
+    "edge21": {
+      "samples": 48,
+      "roi_lpips": 0.020148712683294434,
+      "full_lpips": 0.04214637317151452,
+      "ring_rgb_mae": 4.289650248984496,
+      "background_rgb_mae": 4.888490416109562,
+      "median_seconds": 2.8767917500808835,
+      "median_unet_seconds": 2.5693534464836123,
+      "peak_allocated_mib": 2796.23681640625,
+      "peak_reserved_mib": 3220.0
+    }
+  },
+  "primary": {
+    "mean_difference": 0.0008096042001852766,
+    "cluster_bootstrap_95pct_ci": [
+      -0.0005121885398087519,
+      0.0023729012647284733
+    ],
+    "clusters": 24,
+    "comparison": "edge21 minus global21",
+    "note": "Exploratory paired bootstrap over the M3 product identities, with both seeds grouped.",
+    "relative_change": 0.0418635740573247,
+    "edge_better_products": 10,
+    "edge_worse_products": 14,
+    "delta_by_product": {
+      "table_lamp": -0.008529127575457096,
+      "blue_chair": 0.0006608014227822423,
+      "striped_shorts": -0.00016713805962353945,
+      "boxed_doll": 0.00405460293404758,
+      "cream_jar": 7.127609569579363e-05,
+      "wooden_stool": -0.0022603803081437945,
+      "drink_can": 0.0016164258122444153,
+      "lipstick_case": 0.0028706053271889687,
+      "clip_package": 0.00265048211440444,
+      "covered_table": 0.00029301003087311983,
+      "printed_box": 0.00125154759734869,
+      "packaged_linen": 0.01440143957734108,
+      "woven_lantern": -1.8354272469878197e-05,
+      "mint_trousers": 0.002176017966121435,
+      "perfume_carton": 0.0007468054536730051,
+      "shoulder_bag": -0.001048143021762371,
+      "serum_bottle": 0.0002798702334985137,
+      "wicker_basket": -2.7835718356072903e-05,
+      "woven_hat": -0.0007001636549830437,
+      "office_chair": 0.0021402155980467796,
+      "hanging_outfit": -1.5400932170450687e-05,
+      "heeled_shoes": -0.0008171832887455821,
+      "tool_kit": -0.00022247567540034652,
+      "hair_brush": 2.360314829275012e-05
+    }
+  },
+  "secondary": {
+    "edge_minus_uniform_roi": {
+      "mean_difference": -0.005843061092794717,
+      "cluster_bootstrap_95pct_ci": [
+        -0.009153092712525297,
+        -0.0030856511085706495
+      ],
+      "clusters": 24,
+      "comparison": "edge21 minus uniform21",
+      "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+    },
+    "global_minus_uniform_roi": {
+      "mean_difference": -0.006652665292979994,
+      "cluster_bootstrap_95pct_ci": [
+        -0.010132152985473415,
+        -0.00366891703821845
+      ],
+      "clusters": 24,
+      "comparison": "global21 minus uniform21",
+      "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+    },
+    "edge_minus_global_full": {
+      "mean_difference": 0.0017402625890099443,
+      "cluster_bootstrap_95pct_ci": [
+        -0.0021041325759748966,
+        0.005195394801739894
+      ],
+      "clusters": 24,
+      "comparison": "edge21 minus global21",
+      "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+    },
+    "edge_minus_global_seconds": {
+      "mean_difference": 0.03142999160142305,
+      "cluster_bootstrap_95pct_ci": [
+        -0.0034209307603305203,
+        0.06566565727941144
+      ],
+      "clusters": 24,
+      "comparison": "edge21 minus global21",
+      "note": "Paired bootstrap over prompt clusters; repeated seeds remain grouped. Interpret according to the run protocol."
+    }
+  },
+  "paired_extremes": {
+    "lowest_delta": {
+      "case": "table_lamp",
+      "seed": 6132,
+      "roi_lpips_difference": -0.024037564173340797
+    },
+    "highest_delta": {
+      "case": "packaged_linen",
+      "seed": 2026,
+      "roi_lpips_difference": 0.025044560432434082
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "status": "exploratory reuse of the M3 identities and reference outputs",
+  "manifest_sha256": "fe823403e8b8a984d6dbb6bdafd1aebc32d13cfecf2400144db59af7d829f4fa",
+  "m3_setup_sha256": "5f4818fba810be4b34fcecae914f0ae3e5ee4603461c89a1257916add03a6a0e",
+  "m2_cost_sha256": "94e76b1f3f77cc31b7ef20891414fe26e60de3c9aa6198abe19001e9ab78225e",
+  "model": {
+    "repo_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+    "revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+    "sha256": {
+      "README.md": "6f5758cfeabddb509b09399d6f0879056c5fd0002d7d9849bc183a6de9a98ab0",
+      "model_index.json": "636d700de8970a70f02b91d433ad949dc2ceb750f39ba0cf2cf39ef0b0b9d1e4",
+      "scheduler/scheduler_config.json": "8b457848b74deeeab2a967b75048dd2cb6f393cfc17751eca1b5ec655cff0183",
+      "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "tokenizer/tokenizer_config.json": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "text_encoder/config.json": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "text_encoder/model.fp16.safetensors": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+      "unet/config.json": "669f6581087fac5b16c44e42c58b359a35eadf2af5691d7945480bd7ceac8e6d",
+      "unet/diffusion_pytorch_model.fp16.safetensors": "24b788b4a777748377cc20364eea4ae113c8c42f4468c16bc8c02fdae5492af9",
+      "vae/config.json": "4cd0ce4803567837175fbb8412689fe77d069c1ef8171beb83979db309a8bad5",
+      "vae/diffusion_pytorch_model.fp16.safetensors": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c"
+    }
+  },
+  "code_sha256": {
+    "scripts/run_background_ablation21.py": "9ff0c436f6abb1ee2a7853bc4d8106381e8c402ec3284d7498570d0aedd5abb7",
+    "scripts/run_background.py": "208df5ab81fedffb0992179083c7f0060fbd0d4fb4012fdc263f2453b76b680b",
+    "src/background_task.py": "9850236cf04d8c64bd4801fa79a05beb2d123c1cbcd9e9d10266a4bcb179993c",
+    "src/cache_policy.py": "5a4addf851e36048b0625f9454efc9b8a8e09c6538c8166fb3a861441a911211"
+  },
+  "steps": 50,
+  "budget": 21,
+  "max_gap": 6,
+  "seeds": [
+    2026,
+    6132
+  ],
+  "row_ids": [
+    13,
+    23,
+    24,
+    25,
+    31,
+    32,
+    39,
+    46,
+    50,
+    52,
+    57,
+    59,
+    64,
+    76,
+    79,
+    83,
+    86,
+    98,
+    103,
+    104,
+    105,
+    106,
+    108,
+    118
+  ],
+  "order_seed": 21701,
+  "schedules": {
+    "uniform21": [
+      0,
+      2,
+      4,
+      7,
+      9,
+      11,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      28,
+      30,
+      33,
+      35,
+      38,
+      40,
+      42,
+      45,
+      47
+    ],
+    "global21": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36,
+      40,
+      43,
+      46,
+      48
+    ],
+    "edge21": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      27,
+      30,
+      33,
+      36,
+      40,
+      43,
+      46,
+      48
+    ]
+  },
+  "calibration_proxy_costs": {
+    "uniform21": {
+      "global": 0.00011911526242472793,
+      "edge3": 0.00013365770868389322
+    },
+    "global21": {
+      "global": 7.48826489660935e-05,
+      "edge3": 8.905382131419157e-05
+    },
+    "edge21": {
+      "global": 7.550129344696807e-05,
+      "edge3": 8.821214274641869e-05
+    }
+  },
+  "primary": {
+    "field": "roi_lpips",
+    "comparison": "edge21 minus global21",
+    "cluster": "product row, both seeds averaged",
+    "interval": "paired bootstrap, 5000 resamples"
+  },
+  "secondary": [
+    "edge21 versus uniform21",
+    "global21 versus uniform21",
+    "full LPIPS",
+    "ring and background MAE",
+    "latency",
+    "memory"
+  ]
+}
