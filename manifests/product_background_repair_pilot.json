@@ -1,0 +1,46 @@
+{
+  "purpose": "Development pilot on four previously observed failures with manually annotated repair regions. Human judgments are descriptive and unblinded.",
+  "steps": 30,
+  "seeds": [2026, 6132],
+  "order_seed": 12032,
+  "feather_pixels": 8,
+  "cfg": 7.5,
+  "cases": [
+    {
+      "name": "striped_shorts",
+      "source": "results/product_background/m3/images/striped_shorts/2026/ddim50",
+      "defect": "Two invented trouser legs below the original shorts.",
+      "polygon": [[98, 225], [392, 225], [392, 511], [94, 511]],
+      "prompt": "Continuous matte warm brown textured studio backdrop, fine even grain, flat seamless surface, empty background.",
+      "negative_prompt": "clothing, pants, fabric folds, stripes, foreground object, extra objects",
+      "fallback_rgb": [124, 102, 86]
+    },
+    {
+      "name": "printed_vest",
+      "source": "results/product_background/m2/images/printed_vest/ddim50",
+      "defect": "The product print leaks across most of the generated background.",
+      "polygon": [[0, 0], [511, 0], [511, 511], [0, 511]],
+      "prompt": "Plain ivory seamless photographic backdrop, soft diffuse lighting, flat smooth empty studio background.",
+      "negative_prompt": "floral pattern, clothes, coat hanger, busy texture, foreground object, extra objects",
+      "fallback_rgb": [235, 226, 207]
+    },
+    {
+      "name": "running_shoe",
+      "source": "results/product_background/photo_pilot/images/running_shoe/2026/background/ddim50",
+      "defect": "A tall white extension above the original shoe opening.",
+      "polygon": [[138, 70], [341, 70], [341, 226], [138, 226]],
+      "prompt": "Continuous matte burnt orange studio wall with fine grain, uniform warm reddish brown backdrop, empty surface.",
+      "negative_prompt": "shoes, shoe collar, white objects, lettering, extra objects",
+      "fallback_rgb": [145, 55, 24]
+    },
+    {
+      "name": "striped_cup",
+      "source": "results/product_background/photo_pilot/images/striped_cup/2026/named/ddim50",
+      "defect": "The model adds a handle to a cup that has no handle.",
+      "polygon": [[298, 129], [398, 129], [398, 252], [298, 252]],
+      "prompt": "Continuous warm walnut tabletop with fine horizontal wood grain and even warm lighting, empty clean surface.",
+      "negative_prompt": "cup handle, ceramics, extra objects, foreground objects",
+      "fallback_rgb": [114, 76, 49]
+    }
+  ]
+}

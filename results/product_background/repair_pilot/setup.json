@@ -1,0 +1,49 @@
+{
+  "manifest_sha256": "3d2cefe04d1dda4e26bbbe72a283fb09806d0ab7aa37a0d2a14701b4848398c9",
+  "model": {
+    "repo_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+    "revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+    "sha256": {
+      "README.md": "6f5758cfeabddb509b09399d6f0879056c5fd0002d7d9849bc183a6de9a98ab0",
+      "model_index.json": "636d700de8970a70f02b91d433ad949dc2ceb750f39ba0cf2cf39ef0b0b9d1e4",
+      "scheduler/scheduler_config.json": "8b457848b74deeeab2a967b75048dd2cb6f393cfc17751eca1b5ec655cff0183",
+      "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "tokenizer/tokenizer_config.json": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "text_encoder/config.json": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "text_encoder/model.fp16.safetensors": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+      "unet/config.json": "669f6581087fac5b16c44e42c58b359a35eadf2af5691d7945480bd7ceac8e6d",
+      "unet/diffusion_pytorch_model.fp16.safetensors": "24b788b4a777748377cc20364eea4ae113c8c42f4468c16bc8c02fdae5492af9",
+      "vae/config.json": "4cd0ce4803567837175fbb8412689fe77d069c1ef8171beb83979db309a8bad5",
+      "vae/diffusion_pytorch_model.fp16.safetensors": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c"
+    }
+  },
+  "inference_code_sha256": {
+    "scripts/run_background_repair_pilot.py": "939d63c421055e277434939ee89ca7cd6ff5e775c46da9e69b0d07788bafab82",
+    "src/background_repair.py": "156ab4972cf624536a0cce19d3f4380b18dd68881acac27da8b8a7f189bdb1e8",
+    "scripts/run_background.py": "208df5ab81fedffb0992179083c7f0060fbd0d4fb4012fdc263f2453b76b680b"
+  },
+  "source_sha256": {
+    "striped_shorts": {
+      "input.png": "4067a556d550a993e27e51f94a6a237ac86ba6dbd170404db610ca27cbfd1a6b",
+      "composed.png": "0f718eb7bd9a05765136925c9a5bd119a105b976a1a83ed93705401a75060534",
+      "foreground.png": "afc265f418b3d1311cb3677857a72e6d34b9e4608ce90b9a3d68e08b22c8ff99"
+    },
+    "printed_vest": {
+      "input.png": "d2321502e57133fa36fe8ce551e59d31e4d062e3f6a1f9140a26dcf1dfd60368",
+      "composed.png": "b30668c50c686168820e2648301b4110fa153581b109add83fdea6819e6837e0",
+      "foreground.png": "a86c51c25ad6c917d8722b4a290317bdb01c1f7841b1eeeacc45f4c0a5db833a"
+    },
+    "running_shoe": {
+      "input.png": "3cdfd1a54d7c5f4209510fab28943a5797badcfc6685b778f48f5df9d0cdc773",
+      "composed.png": "9ad009cc3d0b6d7731deb54182468071d0a78d3f0780261a337ac1e999be6226",
+      "foreground.png": "6f0bd33caae0388445108db16807fb4190cafe1f2aee12d8c80cd03b262ad7ee"
+    },
+    "striped_cup": {
+      "input.png": "4e1d0d60dace1e991658081ab9738df50b9b5f137c65f5c303ec83f290836a87",
+      "composed.png": "31089c1990a92f90458bbe89cb89c6a8056025775bfea146613d5a14aa547af6",
+      "foreground.png": "14c394cfc657accc58f2c4e90418d9649a3f803d63ae3fa6014fe492253d2240"
+    }
+  }
+}

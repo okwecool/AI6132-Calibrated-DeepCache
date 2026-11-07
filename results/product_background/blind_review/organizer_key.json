@@ -1,0 +1,121 @@
+{
+  "m3_manifest_sha256": "fe823403e8b8a984d6dbb6bdafd1aebc32d13cfecf2400144db59af7d829f4fa",
+  "forms": {
+    "1": {
+      "R01": {
+        "case": "drink_can",
+        "row_idx": 13,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R02": {
+        "case": "wicker_basket",
+        "row_idx": 23,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R03": {
+        "case": "woven_lantern",
+        "row_idx": 24,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R04": {
+        "case": "perfume_carton",
+        "row_idx": 25,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R05": {
+        "case": "cream_jar",
+        "row_idx": 31,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R06": {
+        "case": "lipstick_case",
+        "row_idx": 32,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R07": {
+        "case": "hair_brush",
+        "row_idx": 39,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R08": {
+        "case": "striped_shorts",
+        "row_idx": 46,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      }
+    },
+    "2": {
+      "R01": {
+        "case": "drink_can",
+        "row_idx": 13,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R02": {
+        "case": "wicker_basket",
+        "row_idx": 23,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R03": {
+        "case": "woven_lantern",
+        "row_idx": 24,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R04": {
+        "case": "perfume_carton",
+        "row_idx": 25,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R05": {
+        "case": "cream_jar",
+        "row_idx": 31,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R06": {
+        "case": "lipstick_case",
+        "row_idx": 32,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      },
+      "R07": {
+        "case": "hair_brush",
+        "row_idx": 39,
+        "seed": 2026,
+        "A": "calibrated",
+        "B": "uniform17"
+      },
+      "R08": {
+        "case": "striped_shorts",
+        "row_idx": 46,
+        "seed": 2026,
+        "A": "uniform17",
+        "B": "calibrated"
+      }
+    }
+  }
+}
