@@ -211,3 +211,14 @@ The manifest records the source rows, file hashes, prompts, and seeds.
 & '.\.venv\Scripts\python.exe' scripts/run_background_photo_pilot.py --prepare
 & '.\.venv\Scripts\python.exe' scripts/run_background_photo_pilot.py --output results/product_background/photo_pilot_recheck
 ```
+
+The [M2 regional calibration report](results/product_background/m2/report.md)
+adds eight validation examples and comparison figures for the report and
+presentation. It records the four calibration objectives and their shared
+17-refresh schedule. The M2 manifest separates calibration and validation
+identities from the earlier photo pilot.
+
+```powershell
+& '.\.venv\Scripts\python.exe' scripts/run_background_m2.py --prepare
+& '.\.venv\Scripts\python.exe' scripts/run_background_m2.py --output results/product_background/m2_recheck
+```

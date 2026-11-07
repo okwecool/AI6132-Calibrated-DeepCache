@@ -1,0 +1,396 @@
+{
+  "source": {
+    "repo": "finegrain/finegrain-product-masks-lite",
+    "revision": "17c618f809f87091e35533e0c4dacda065448d7d",
+    "config": "default",
+    "split": "test",
+    "card": "https://huggingface.co/datasets/finegrain/finegrain-product-masks-lite",
+    "declared_license": "MIT"
+  },
+  "purpose": "M2 calibration and validation only; exclude all 16 rows and previous pilot rows from independent testing.",
+  "selection": "Select distinct objects from source images and masks before running inference. Use background-only wording for all M2 cases.",
+  "steps": 50,
+  "budget": 17,
+  "max_gap": 6,
+  "ring_radius": 16,
+  "calibration_seed": 6132,
+  "validation_seed": 2026,
+  "order_seed": 71106,
+  "dpm_candidates": [
+    16,
+    20,
+    24
+  ],
+  "dpm_match_cases": 3,
+  "selection_metric": "Mean validation LPIPS on eight fixed 128 px boundary crops per object, select among edit, edge1, edge3.",
+  "cases": [
+    {
+      "row_idx": 29,
+      "image": {
+        "size": [
+          600,
+          600
+        ],
+        "mode": "RGB",
+        "sha256": "6509f8972be7b3ae3e7ca8b803304f03d1d12bf1df5001bf331daabdef05d129"
+      },
+      "mask": {
+        "size": [
+          600,
+          600
+        ],
+        "mode": "L",
+        "sha256": "57f519e25186c5be0b9667e4eec9f72067c691bb2729d8bdd792696814a742c0"
+      },
+      "name": "green_bench",
+      "split": "calibration",
+      "prompt": "A paved garden path, soft green foliage in the distance, overcast daylight, catalog photography.",
+      "foreground_fraction_at_512": 0.17310333251953125
+    },
+    {
+      "row_idx": 30,
+      "image": {
+        "size": [
+          1200,
+          1200
+        ],
+        "mode": "RGB",
+        "sha256": "f667f3dca24113a5e0ecc3a691f404cd8602ad0253655b8a06773b476e7856a4"
+      },
+      "mask": {
+        "size": [
+          1200,
+          1200
+        ],
+        "mode": "L",
+        "sha256": "5044060df0356ad2bdf162bfe27f32eb3b72af93991f3f7745e466f28970d646"
+      },
+      "name": "amber_bottle",
+      "split": "calibration",
+      "prompt": "A light stone counter and a pale neutral studio backdrop with soft side lighting, product photography.",
+      "foreground_fraction_at_512": 0.15701675415039062
+    },
+    {
+      "row_idx": 34,
+      "image": {
+        "size": [
+          842,
+          1039
+        ],
+        "mode": "RGB",
+        "sha256": "b5df4f1807fcb932420272055d09318e51c61e9d53a381b829ed6032f3d51c30"
+      },
+      "mask": {
+        "size": [
+          842,
+          1039
+        ],
+        "mode": "L",
+        "sha256": "5c101aa8372ab0447be7d82873091e363b080efff596d5036718df2aee44ff7d"
+      },
+      "name": "potted_plant",
+      "split": "calibration",
+      "prompt": "A natural oak console table against a warm white interior wall with soft daylight, catalog photography.",
+      "foreground_fraction_at_512": 0.13288116455078125
+    },
+    {
+      "row_idx": 47,
+      "image": {
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "RGB",
+        "sha256": "322f8555546bcfb2d7593979dff19b4e4820d531847f4e1842ce49abdd035f1a"
+      },
+      "mask": {
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "L",
+        "sha256": "900dac8dcc3b3261053196db1d40aa4e292bd44809ee00072b0a4c76b83bf4d1"
+      },
+      "name": "plaid_shirt",
+      "split": "calibration",
+      "prompt": "A smooth light gray studio backdrop with diffuse daylight, clean apparel photography.",
+      "foreground_fraction_at_512": 0.2833747863769531
+    },
+    {
+      "row_idx": 61,
+      "image": {
+        "size": [
+          929,
+          1500
+        ],
+        "sha256": "cb757fb5c41d99948dd13ce0ee02a375d921796c47fe6c978227f7e976657bb5",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          929,
+          1500
+        ],
+        "sha256": "6de5a3ea93b360feda1ee940aaeefbfd26fb5e3169343b03dd4fd91297004a78",
+        "mode": "L"
+      },
+      "name": "candy_jar",
+      "split": "calibration",
+      "prompt": "A white marble display counter with a soft pastel studio backdrop, product photography.",
+      "foreground_fraction_at_512": 0.3363151550292969
+    },
+    {
+      "row_idx": 71,
+      "image": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB",
+        "sha256": "6527a47a5d40b8a1f320766bf90fd967cfb107097b32fdf5aee93ad240f65369"
+      },
+      "mask": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L",
+        "sha256": "adc7eb69dda7b02e45e50f536421f8ba961dee1c17de239fc8c7df3db6d80960"
+      },
+      "name": "skateboard",
+      "split": "calibration",
+      "prompt": "A smooth concrete floor and a clean blue-gray wall in a bright indoor studio, product photography.",
+      "foreground_fraction_at_512": 0.11850357055664062
+    },
+    {
+      "row_idx": 73,
+      "image": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB",
+        "sha256": "25bb70d1bf9b66f6ae33527f23031437f5bb46d9f5c9c865bd6ec9b21418378e"
+      },
+      "mask": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L",
+        "sha256": "c33798c82a1309afa35f8c640235d4327f9fe5093169ae44a02f1df61c4c3eb8"
+      },
+      "name": "pedestal_table",
+      "split": "calibration",
+      "prompt": "Light oak flooring with a muted sage wall and gentle daylight, minimalist furniture catalog photograph.",
+      "foreground_fraction_at_512": 0.046722412109375
+    },
+    {
+      "row_idx": 109,
+      "image": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB",
+        "sha256": "95a42f2b096806fa5105d66ac6395397f8b2fe6d65dfb739aa1630a2161af1c3"
+      },
+      "mask": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L",
+        "sha256": "7bd240b1809aa7ac7121d6fdd668cd0caffdfc47f7dc471e9825ddb20dd6ce7c"
+      },
+      "name": "sandal",
+      "split": "calibration",
+      "prompt": "A light sandstone display surface with a warm beige backdrop and soft studio shadows, product photography.",
+      "foreground_fraction_at_512": 0.08135986328125
+    },
+    {
+      "row_idx": 28,
+      "image": {
+        "size": [
+          960,
+          960
+        ],
+        "mode": "RGB",
+        "sha256": "ce3331c60c540776f4366961dfa3747410eba81dd25fe1e6d95b49d16fac2d9e"
+      },
+      "mask": {
+        "size": [
+          960,
+          960
+        ],
+        "mode": "L",
+        "sha256": "94ffd503359af7e73b73b98bdd22f98208bbaed53c689e7d854651f164d7f1ab"
+      },
+      "name": "wooden_bench",
+      "split": "validation",
+      "prompt": "A sunlit stone patio with softly blurred greenery in the distance, outdoor furniture catalog photograph.",
+      "foreground_fraction_at_512": 0.21649551391601562
+    },
+    {
+      "row_idx": 36,
+      "image": {
+        "size": [
+          700,
+          700
+        ],
+        "mode": "RGB",
+        "sha256": "42d26ba1239e75c03a52932a7d8ccbe50b0b68846801c141746abe9b27e731ca"
+      },
+      "mask": {
+        "size": [
+          700,
+          700
+        ],
+        "mode": "L",
+        "sha256": "614432a66b867435ced56990f331f0808c573210a3616adbc3e9b3de1042b346"
+      },
+      "name": "lawn_mower",
+      "split": "validation",
+      "prompt": "A level paved garden path beside a softly lit lawn in daylight, outdoor product photography.",
+      "foreground_fraction_at_512": 0.30381011962890625
+    },
+    {
+      "row_idx": 56,
+      "image": {
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "RGB",
+        "sha256": "bad0285603c9c3a2bf2e1988c9e115fab1b14b8f011c67e2dfa65b6b38297fee"
+      },
+      "mask": {
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "L",
+        "sha256": "920c90f3ffee562b5c716d8434b00367ee122bb8bfb84eba4e8301422206a1c8"
+      },
+      "name": "printed_vest",
+      "split": "validation",
+      "prompt": "A plain warm ivory studio backdrop, soft diffuse light, catalog apparel photography.",
+      "foreground_fraction_at_512": 0.2719306945800781
+    },
+    {
+      "row_idx": 72,
+      "image": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB",
+        "sha256": "ef09b106eca1d45055461c57e5efd8577258bcae5f00cd26db7d5692528efbd3"
+      },
+      "mask": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L",
+        "sha256": "0653eab9f3a97c8f14f828dab97ecd17e6bd6642014c924c6e25d9759fbad16c"
+      },
+      "name": "folding_chair",
+      "split": "validation",
+      "prompt": "A light oak floor against a muted pale blue wall, diffuse daylight, simple furniture catalog photograph.",
+      "foreground_fraction_at_512": 0.06545257568359375
+    },
+    {
+      "row_idx": 95,
+      "image": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB",
+        "sha256": "b3c7e62de55e53dd21fb32ed27efce991cad132e4c50b1b8ba67004452bb3e81"
+      },
+      "mask": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L",
+        "sha256": "b2acbf5e91f719a1248701c22480371b50fe69024eb45ef9947f2469c7def212"
+      },
+      "name": "plush_bag",
+      "split": "validation",
+      "prompt": "A pale wooden retail display shelf against a clean lavender wall, soft ambient light, catalog photography.",
+      "foreground_fraction_at_512": 0.0384674072265625
+    },
+    {
+      "row_idx": 102,
+      "image": {
+        "size": [
+          2992,
+          2992
+        ],
+        "sha256": "f13f89ac9fdeababa2cbcbea5c91098e505ee4302a8323ffd90d11600c231e67",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          2992,
+          2992
+        ],
+        "sha256": "53a0166b4eb4ac9fab1ac896e8bc8072fbafedaf913ee544100480a7c26f9b0e",
+        "mode": "L"
+      },
+      "name": "black_boots",
+      "split": "validation",
+      "prompt": "A low gray concrete display platform, matte beige backdrop, soft side lighting, product photography.",
+      "foreground_fraction_at_512": 0.25023651123046875
+    },
+    {
+      "row_idx": 110,
+      "image": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB",
+        "sha256": "4336eac5778aad45ee3a9ab14ca0596fb83322c94a99eef05dea982e673e9af0"
+      },
+      "mask": {
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L",
+        "sha256": "30b2d7258c0034aa1af6e46568352865471b9bacd911a4786b9c5835989bd5b1"
+      },
+      "name": "sunglasses",
+      "split": "validation",
+      "prompt": "A beige linen surface with warm diffuse daylight, understated luxury catalog photography.",
+      "foreground_fraction_at_512": 0.0554351806640625
+    },
+    {
+      "row_idx": 116,
+      "image": {
+        "size": [
+          1152,
+          768
+        ],
+        "sha256": "e936ed5df0ac4072b58fe889bc8c479a4096800ac5335db71f1933ed913cbe5e",
+        "mode": "RGB"
+      },
+      "mask": {
+        "size": [
+          1152,
+          768
+        ],
+        "sha256": "e7980fe74d27aa33dcb42eef4f032ceccf9dc196dbce7ae3635a5d4ec031bb5a",
+        "mode": "L"
+      },
+      "name": "open_book",
+      "split": "validation",
+      "prompt": "A walnut tabletop with a muted dark green backdrop and soft warm window light, product photography.",
+      "foreground_fraction_at_512": 0.1260223388671875
+    }
+  ]
+}

@@ -73,14 +73,9 @@ def comparison_sheet(cases, seed, output):
     sheet.save(output / "images" / f"comparison_seed{seed}.jpg", quality=92)
 
 
-def run(manifest, output):
-    from run_background import (
-        MODEL, BackgroundRunner, assert_restored, prepare_product, save_case, uniform_schedule,
-    )
+def load_inputs(cases):
+    from run_background import prepare_product
 
-    if output.exists():
-        raise ValueError("Choose a new output directory")
-    cases = manifest["cases"]
     inputs = {}
     for case in cases:
         for key in ("image", "mask"):
@@ -88,7 +83,18 @@ def run(manifest, output):
                 raise RuntimeError(f"{case['name']}: {key} does not match the frozen source")
         with Image.open(asset_path(case, "image")) as photo, Image.open(asset_path(case, "mask")) as mask:
             inputs[case["name"]] = prepare_product(photo, mask)
+    return inputs
 
+
+def run(manifest, output):
+    from run_background import (
+        MODEL, BackgroundRunner, assert_restored, save_case, uniform_schedule,
+    )
+
+    if output.exists():
+        raise ValueError("Choose a new output directory")
+    cases = manifest["cases"]
+    inputs = load_inputs(cases)
     runner = BackgroundRunner()
     output.mkdir(parents=True, exist_ok=False)
     first = cases[0]
