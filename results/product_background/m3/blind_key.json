@@ -1,0 +1,50 @@
+{
+  "R01": {
+    "case": "drink_can",
+    "seed": 2026,
+    "A": "uniform17",
+    "B": "calibrated"
+  },
+  "R02": {
+    "case": "wicker_basket",
+    "seed": 2026,
+    "A": "calibrated",
+    "B": "uniform17"
+  },
+  "R03": {
+    "case": "woven_lantern",
+    "seed": 2026,
+    "A": "calibrated",
+    "B": "uniform17"
+  },
+  "R04": {
+    "case": "perfume_carton",
+    "seed": 2026,
+    "A": "calibrated",
+    "B": "uniform17"
+  },
+  "R05": {
+    "case": "cream_jar",
+    "seed": 2026,
+    "A": "calibrated",
+    "B": "uniform17"
+  },
+  "R06": {
+    "case": "lipstick_case",
+    "seed": 2026,
+    "A": "uniform17",
+    "B": "calibrated"
+  },
+  "R07": {
+    "case": "hair_brush",
+    "seed": 2026,
+    "A": "calibrated",
+    "B": "uniform17"
+  },
+  "R08": {
+    "case": "striped_shorts",
+    "seed": 2026,
+    "A": "calibrated",
+    "B": "uniform17"
+  }
+}

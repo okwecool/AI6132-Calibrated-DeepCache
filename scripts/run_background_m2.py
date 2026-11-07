@@ -155,13 +155,25 @@ def validate(runner, cases, inputs, protocol, schedules, output):
 
 
 @torch.inference_mode()
-def evaluate(rows, cases, inputs, radius, output):
-    metric = lpips.LPIPS(net="alex").eval().cuda()
-    box_map = {case["name"]: boundary_crops(inputs[case["name"]][1]) for case in cases}
-
+def reference_metrics(metric, reference, candidate, boxes, edit, ring):
     def tensors(picture, boxes):
         crops = [np.asarray(picture.crop(box)) for box in boxes]
         return torch.from_numpy(np.stack(crops)).permute(0, 3, 1, 2).cuda().float() / 127.5 - 1
+
+    diff = np.abs(np.asarray(reference, dtype=np.float32) - np.asarray(candidate, dtype=np.float32))
+    full = [(0, 0, reference.width, reference.height)]
+    return {
+        "roi_lpips": float(metric(tensors(reference, boxes), tensors(candidate, boxes)).mean()),
+        "ring_rgb_mae": float(diff[ring].mean()),
+        "background_rgb_mae": float(diff[edit].mean()),
+        "full_lpips": float(metric(tensors(reference, full), tensors(candidate, full)).mean()),
+    }
+
+
+@torch.inference_mode()
+def evaluate(rows, cases, inputs, radius, output):
+    metric = lpips.LPIPS(net="alex").eval().cuda()
+    box_map = {case["name"]: boundary_crops(inputs[case["name"]][1]) for case in cases}
 
     for row in rows:
         name, method = row["case"], row["method"]
@@ -169,13 +181,7 @@ def evaluate(rows, cases, inputs, radius, output):
         edit, ring = edit_regions(inputs[name][1], radius)
         with Image.open(folder / "ddim50/composed.png") as reference, \
              Image.open(folder / method / "composed.png") as candidate:
-            diff = np.abs(np.asarray(reference, dtype=np.float32) - np.asarray(candidate, dtype=np.float32))
-            boxes = box_map[name]
-            row["roi_lpips"] = float(metric(tensors(reference, boxes), tensors(candidate, boxes)).mean())
-            row["ring_rgb_mae"] = float(diff[ring].mean())
-            row["background_rgb_mae"] = float(diff[edit].mean())
-            full = [(0, 0, reference.width, reference.height)]
-            row["full_lpips"] = float(metric(tensors(reference, full), tensors(candidate, full)).mean())
+            row.update(reference_metrics(metric, reference, candidate, box_map[name], edit, ring))
     summary = {}
     for method in sorted({row["method"] for row in rows}):
         subset = [row for row in rows if row["method"] == method]

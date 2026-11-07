@@ -1,0 +1,607 @@
+{
+  "source": {
+    "repo": "finegrain/finegrain-product-masks-lite",
+    "revision": "17c618f809f87091e35533e0c4dacda065448d7d",
+    "config": "default",
+    "split": "test",
+    "card": "https://huggingface.co/datasets/finegrain/finegrain-product-masks-lite",
+    "declared_license": "MIT"
+  },
+  "excluded_rows": [
+    28,
+    29,
+    30,
+    34,
+    36,
+    40,
+    41,
+    47,
+    56,
+    61,
+    71,
+    72,
+    73,
+    81,
+    95,
+    102,
+    109,
+    110,
+    115,
+    116
+  ],
+  "cases": [
+    {
+      "row_idx": 13,
+      "image": {
+        "sha256": "25edf2ca7d9d1dc4c1d94ba93ffc852ef41b6bf89102790b18a72224bbbd1bf4",
+        "size": [
+          2048,
+          2048
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "3c1e58a67a4798edc70511360240be701b526fc481e135990af36bf27f02475c",
+        "size": [
+          2048,
+          2048
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.15008926391601562,
+      "name": "drink_can",
+      "scene_family": "outdoor",
+      "prompt": "A pale stone outdoor table, blurred garden foliage and gentle daylight, product photography."
+    },
+    {
+      "row_idx": 23,
+      "image": {
+        "sha256": "718c559a3e3cc2e937c36092419dcb40c0e01ad0bac2143dfc5e21ac48a4f8cb",
+        "size": [
+          2000,
+          2000
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "a2e1b3b8e4a19923c20208ba7849f65e7b7adca408f53ee2037a9e8c2bfe9926",
+        "size": [
+          2000,
+          2000
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.5081520080566406,
+      "name": "wicker_basket",
+      "scene_family": "interior",
+      "prompt": "Light oak flooring and a pale sage wall with soft daylight, a minimalist catalog scene."
+    },
+    {
+      "row_idx": 24,
+      "image": {
+        "sha256": "f9be63a2fd20afa9187834710dd9e6c68879ed15d5985c299187870e3da09802",
+        "size": [
+          1000,
+          1500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "92e387534d37b4e0435ac0c481547694ba6981e4d5be8ddc33ec29bb264c33d7",
+        "size": [
+          1000,
+          1500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.20084762573242188,
+      "name": "woven_lantern",
+      "scene_family": "interior",
+      "prompt": "A light wood side table against a warm neutral living-room wall, diffuse daylight, catalog photography."
+    },
+    {
+      "row_idx": 25,
+      "image": {
+        "sha256": "506b6d9eafb837f5cdad26d9875ca7730a9662fe800173c9aa16f465ccdaefcc",
+        "size": [
+          1600,
+          1600
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "80caedf5d5e3102cf892d0ca5b2ce09c91e57c0a61abf14490dfef464b444f42",
+        "size": [
+          1600,
+          1600
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.24221420288085938,
+      "name": "perfume_carton",
+      "scene_family": "studio",
+      "prompt": "A deep navy studio backdrop and a matte black display surface, soft side lighting, product photography."
+    },
+    {
+      "row_idx": 31,
+      "image": {
+        "sha256": "045770502872ee7a22f730b90ccb1ae1b1d84693e0f323a4c632723d6d82ed2f",
+        "size": [
+          1000,
+          1000
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "fbd97e1a0721e164f6fb8dbdde8db24fcc419f74f6302c946d8736b2b1d8e227",
+        "size": [
+          1000,
+          1000
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.5079231262207031,
+      "name": "cream_jar",
+      "scene_family": "studio",
+      "prompt": "A cream-colored seamless studio backdrop and a pale stone display surface, diffused light."
+    },
+    {
+      "row_idx": 32,
+      "image": {
+        "sha256": "ecb8de3f88de22cf27b39f3cfd7d7d8f74dc435226b58f766bb9b5c1ea864393",
+        "size": [
+          1500,
+          1500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "beb7b54f70087df6ad2c5bd009d1f7cdfcbfd0313b2c25b9b674ce784bd6cf52",
+        "size": [
+          1500,
+          1500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.18028640747070312,
+      "name": "lipstick_case",
+      "scene_family": "studio",
+      "prompt": "A muted lavender seamless studio backdrop and a pale matte display surface, soft side lighting."
+    },
+    {
+      "row_idx": 39,
+      "image": {
+        "sha256": "44234c7a7d0acf31b765206f2d4c090acd0df61548fe3c71b31747d4a5af783f",
+        "size": [
+          1500,
+          1500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "686ad18b369cfe99f72b2a61d1a91d8d533b52734ae87fd754080a14e42a3e60",
+        "size": [
+          1500,
+          1500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.31552886962890625,
+      "name": "hair_brush",
+      "scene_family": "studio",
+      "prompt": "A matte white display plinth against a pastel blue studio backdrop, soft even light."
+    },
+    {
+      "row_idx": 46,
+      "image": {
+        "sha256": "2874afa9b47de144d05b531c3718de4971d7635c110618ed105d5a4a979f3aac",
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "8ef581d766cbcff171c207d696720b4513e0680498dca15484d9d9e6ae5c5eab",
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.14032745361328125,
+      "name": "striped_shorts",
+      "scene_family": "studio",
+      "prompt": "A smooth warm-gray seamless backdrop, soft diffuse light, clean clothing catalog photography."
+    },
+    {
+      "row_idx": 50,
+      "image": {
+        "sha256": "41306f1e78f413027548b158e0ed9a133b0bfeed38507c7dc62c6dab4d97ab26",
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "2ab06a623a3e37b8ecc08c43e98eccd503f6c9234aa7cdea0e5dea911ca7152f",
+        "size": [
+          1875,
+          2500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.19706344604492188,
+      "name": "mint_trousers",
+      "scene_family": "studio",
+      "prompt": "A plain light gray studio backdrop with soft even lighting, clean clothing catalog photography."
+    },
+    {
+      "row_idx": 52,
+      "image": {
+        "sha256": "392291bcdb80cbe975bb79238bffddb3fa7ba414620b999b7c43f311a1de0ebc",
+        "size": [
+          1125,
+          1500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "1c5f320f1aacbdffec92ef42117cd92b82c9d6575ab42ab5331cff0ae06f2da3",
+        "size": [
+          1125,
+          1500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.12264633178710938,
+      "name": "hanging_outfit",
+      "scene_family": "studio",
+      "prompt": "An ivory seamless backdrop with soft side lighting, minimalist apparel catalog photograph."
+    },
+    {
+      "row_idx": 57,
+      "image": {
+        "sha256": "0fc6554222c9d99fad752a946535ec54b498f4495b47291371319c18a05a99b2",
+        "size": [
+          1500,
+          1500
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "c1bdb7de9bf10deb463638afe77e49c585b4cfd5d5091f0dfe9e2db18c7fa6c9",
+        "size": [
+          1500,
+          1500
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.201934814453125,
+      "name": "clip_package",
+      "scene_family": "studio",
+      "prompt": "A white tabletop against a pale blue seamless studio backdrop, soft left-side lighting."
+    },
+    {
+      "row_idx": 59,
+      "image": {
+        "sha256": "505c018a457dc0b91ebffe8ea72b49be7fccb78f2434fa17379e201f053d632b",
+        "size": [
+          3000,
+          3000
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "4e3f8dbd1a4ab5419350d1fab0e6d8da8def4026328609506ae0da4115c01992",
+        "size": [
+          3000,
+          3000
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.4234657287597656,
+      "name": "tool_kit",
+      "scene_family": "interior",
+      "prompt": "A tidy light oak workbench and a plain neutral workshop wall, diffuse daylight, product photography."
+    },
+    {
+      "row_idx": 64,
+      "image": {
+        "sha256": "03eca19e9f71c37983d0bf2554b17d9248e85f59e2c51c344b059347d42f7788",
+        "size": [
+          2500,
+          2499
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "c4d8deac17417f5f9e7298fa03ef209f45456cd23a82673bbe69569fd4421e08",
+        "size": [
+          2500,
+          2499
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.407379150390625,
+      "name": "boxed_doll",
+      "scene_family": "interior",
+      "prompt": "A pale wooden retail display shelf against a muted lavender wall, soft ambient light."
+    },
+    {
+      "row_idx": 76,
+      "image": {
+        "sha256": "4f44df83a64b1689573d7c4ee37aea0c53f034a02a019767fa0f3fa70edd029e",
+        "size": [
+          2992,
+          2992
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "04b7476bd615c2dcb87836d3bfd51e850f1c30bc462284e3884bf5eb877bd620",
+        "size": [
+          2992,
+          2992
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.12017059326171875,
+      "name": "office_chair",
+      "scene_family": "interior",
+      "prompt": "A clean home office with light oak flooring and a pale gray wall, soft window light."
+    },
+    {
+      "row_idx": 79,
+      "image": {
+        "sha256": "144b0e76da74cb8de683292969f5a68aa1739010f77b8cf531873a015d40c9a5",
+        "size": [
+          2000,
+          2000
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "8cffaebd2f3f4a4430d5da450b3eadc949813ef98740a86e7f25073b93212815",
+        "size": [
+          2000,
+          2000
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.14688491821289062,
+      "name": "packaged_linen",
+      "scene_family": "interior",
+      "prompt": "A light oak retail shelf against a plain warm beige wall, soft ambient light, catalog photography."
+    },
+    {
+      "row_idx": 83,
+      "image": {
+        "sha256": "0032a2c16d4fdf0722242944da8d31a6ae0b1643f7707bc880d298ac7c919932",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "dc280e1508c261336660b4e62d73e70ae1a74bda538329c633d784d36e0d0c19",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.1091461181640625,
+      "name": "wooden_stool",
+      "scene_family": "interior",
+      "prompt": "Light oak flooring against a muted pale blue wall, diffuse daylight, furniture catalog photography."
+    },
+    {
+      "row_idx": 86,
+      "image": {
+        "sha256": "3483968d4f424a561adaab57557ca78a59e4e7f35926e12f69e0f78afa3b6548",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "dfe17584c6e4e3aa3f01f8bcf32af1478d34916319bfbceea8f75f8f2b5ad795",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.13323593139648438,
+      "name": "printed_box",
+      "scene_family": "interior",
+      "prompt": "A plain light wood display shelf against a soft cream wall, diffuse daylight."
+    },
+    {
+      "row_idx": 98,
+      "image": {
+        "sha256": "d504d3113700acd22850a7be4f8377d0d47426ed58a519af5a15c339e64746a7",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "dd467729392538410eba3295f5bff0b3f48d66edd86589674661fb9a2622090b",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.16601943969726562,
+      "name": "table_lamp",
+      "scene_family": "interior",
+      "prompt": "A walnut side table beside a matte sage wall, soft warm ambient light, interior catalog photography."
+    },
+    {
+      "row_idx": 103,
+      "image": {
+        "sha256": "e76ec1c8597ed14fcbb99499071f3155c8bca048a5163afa598ec6c194bcd958",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "309e3b2ef51550a0a9ab7be333f6a07b3d4dbf1b4a96709bf40ca6378eba17ef",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.2688560485839844,
+      "name": "shoulder_bag",
+      "scene_family": "studio",
+      "prompt": "A matte charcoal display surface and a clean warm gray studio backdrop, soft side lighting."
+    },
+    {
+      "row_idx": 104,
+      "image": {
+        "sha256": "20cc27edc0b10ea0a9118695f2ce3733e8bf6b90acab151ba8b7c892904b196d",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "5b053992c8eff6635d83095f7cb8b0c63d24db3858a667685f666944b8c5b235",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.5278701782226562,
+      "name": "covered_table",
+      "scene_family": "interior",
+      "prompt": "A light oak floor and a cream wall in diffuse daylight, minimalist furniture catalog photography."
+    },
+    {
+      "row_idx": 105,
+      "image": {
+        "sha256": "02ee36334a14878f1ac3cfdb997a96ddf92f44141bc9314d76c4c95aed71d700",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "ae525ef25602f341dce560e5793c201979e127531ba2727e167f4c51941c7c3a",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.1422576904296875,
+      "name": "woven_hat",
+      "scene_family": "outdoor",
+      "prompt": "A pale wooden outdoor display surface, blurred greenery and soft afternoon daylight."
+    },
+    {
+      "row_idx": 106,
+      "image": {
+        "sha256": "b5daad64cc3f0c22f847a13201d9320801974454ac002e4f3e148fb517fdc1f0",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "131ba617fa1a51a6e5c032bf83e7ac11cb2f5fa830ae9926cafd44935d1d62f7",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.19548416137695312,
+      "name": "blue_chair",
+      "scene_family": "interior",
+      "prompt": "A smooth light oak floor against a warm ivory wall, soft daylight, minimalist furniture catalog photograph."
+    },
+    {
+      "row_idx": 108,
+      "image": {
+        "sha256": "62c62973dc2537d17032443bd87ba24930df67e6ef7e149f5e08cf95faa23d11",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "RGB"
+      },
+      "mask": {
+        "sha256": "0be20a45a686bbf4b3715aa5dacec3d254acef6e741e4283da326fc9474dbf22",
+        "size": [
+          3024,
+          3024
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.18534088134765625,
+      "name": "heeled_shoes",
+      "scene_family": "studio",
+      "prompt": "A low pale concrete display platform and a smooth warm beige studio backdrop, soft light from the left."
+    },
+    {
+      "row_idx": 118,
+      "image": {
+        "sha256": "9f5cfc196572caac0ccc9e926244af300819673fe2c36094901f273017ac0f97",
+        "size": [
+          768,
+          992
+        ],
+        "mode": "RGBA"
+      },
+      "mask": {
+        "sha256": "9581a7f0fd1c5e27ac1e4810c548c50997e1252ccdc41bbfca92944ca9fe2deb",
+        "size": [
+          768,
+          992
+        ],
+        "mode": "L"
+      },
+      "foreground_fraction_at_512": 0.112518310546875,
+      "name": "serum_bottle",
+      "scene_family": "studio",
+      "prompt": "A muted pink seamless backdrop and a clean pale stone display surface, soft diffuse light."
+    }
+  ],
+  "steps": 50,
+  "seeds": [
+    2026,
+    6132
+  ],
+  "order_seed": 71032,
+  "timing_repeat_cases": 2,
+  "ring_radius": 16,
+  "policy_source_sha256": {
+    "calibration.json": "19d5a1b19361af339c7772bdc6389858b8c68ad36b2f6fdb3b7510fd5b4db23b",
+    "report.json": "fdb0d463c63c551751dac95b3f32ee8c6d21381be34f8d589479a512b71ddbce"
+  },
+  "primary": {
+    "field": "roi_lpips",
+    "comparison": "calibrated minus uniform17",
+    "cluster": "product row",
+    "resamples": 5000,
+    "interval": "paired two-sided 95% percentile bootstrap",
+    "seed": 6132
+  },
+  "protocol": "24 held-out product identities, one background-only prompt per product, two fixed seeds. Use M2 policies unchanged. Raw repeated timings stay separate from the primary set. Select samples from input photos and masks before inference. Exclude previous images, duplicate photos, transparent foregrounds, cropped or ambiguous targets and fashion-model images. One opaque can held in hand is retained as an occlusion example. Review cards use the first seed and fixed input rows; optional performance extrema use the primary score."
+}

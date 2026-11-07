@@ -222,3 +222,15 @@ identities from the earlier photo pilot.
 & '.\.venv\Scripts\python.exe' scripts/run_background_m2.py --prepare
 & '.\.venv\Scripts\python.exe' scripts/run_background_m2.py --output results/product_background/m2_recheck
 ```
+
+The [M3 independent test report](results/product_background/m3/report.md)
+covers 24 separate product photos with two fixed seeds, the frozen M2
+refresh schedule, and the matched 20-step DPM baseline. The asset command
+reads the pinned dataset Parquet with PyArrow. Inference resumes completed
+jobs from their local outputs when the run provenance still matches.
+
+```powershell
+& '.\.venv\Scripts\python.exe' scripts/run_background_m3.py --prepare
+& '.\.venv\Scripts\python.exe' scripts/run_background_m3.py --output results/product_background/m3_recheck
+& '.\.venv\Scripts\python.exe' scripts/evaluate_background_m3.py --output results/product_background/m3_recheck
+```
