@@ -181,3 +181,9 @@ Future changes are implemented and checked in the working tree, then presented
 to the user for review. Create a commit only after the user explicitly approves
 those changes. The initial-commit authorization does not cover later commits.
 See `AGENTS.md` for the repository working rules.
+
+## Product background replacement: design
+
+The proposed application extension is described in
+[the product background replacement design](docs/product_background_replacement_design.md).
+It is a design for a new inpainting task, not an implemented or evaluated result.
